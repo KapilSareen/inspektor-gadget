@@ -39,6 +39,7 @@ type Tracer struct {
 	accessor datasource.FieldAccessor
 
 	mapType       ebpf.MapType
+	// here
 	eventSize     uint32 // needed to trim trailing bytes when reading for perf event array
 	ringbufReader *ringbuf.Reader
 	perfReader    *perf.Reader

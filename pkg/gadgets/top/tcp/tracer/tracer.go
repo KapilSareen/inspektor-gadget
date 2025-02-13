@@ -122,6 +122,7 @@ func (t *Tracer) install() error {
 	if err != nil {
 		return fmt.Errorf("attaching kprobe: %w", err)
 	}
+	fmt.Println()
 
 	return nil
 }

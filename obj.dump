@@ -1,0 +1,1871 @@
+[1] PTR '(anon)' type_id=3
+[2] INT 'int' size=4 bits_offset=0 nr_bits=32 encoding=SIGNED
+[3] ARRAY '(anon)' type_id=2 index_type_id=4 nr_elems=6
+[4] INT '__ARRAY_SIZE_TYPE__' size=4 bits_offset=0 nr_bits=32 encoding=(none)
+[5] PTR '(anon)' type_id=6
+[6] ARRAY '(anon)' type_id=2 index_type_id=4 nr_elems=1
+[7] PTR '(anon)' type_id=8
+[8] ARRAY '(anon)' type_id=2 index_type_id=4 nr_elems=4
+[9] PTR '(anon)' type_id=10
+[10] ARRAY '(anon)' type_id=2 index_type_id=4 nr_elems=10240
+[11] STRUCT '(anon)' size=32 vlen=4
+	'type' type_id=1 bits_offset=0
+	'max_entries' type_id=5 bits_offset=64
+	'key_size' type_id=7 bits_offset=128
+	'value_size' type_id=9 bits_offset=192
+[12] VAR 'gadget_heap' type_id=11, linkage=global
+[13] PTR '(anon)' type_id=14
+[14] TYPEDEF 'gadget_mntns_id' type_id=15
+[15] TYPEDEF '__u64' type_id=16
+[16] INT 'unsigned long long' size=8 bits_offset=0 nr_bits=64 encoding=(none)
+[17] PTR '(anon)' type_id=18
+[18] TYPEDEF '__u32' type_id=19
+[19] INT 'unsigned int' size=4 bits_offset=0 nr_bits=32 encoding=(none)
+[20] PTR '(anon)' type_id=21
+[21] ARRAY '(anon)' type_id=2 index_type_id=4 nr_elems=1024
+[22] STRUCT '(anon)' size=32 vlen=4
+	'type' type_id=5 bits_offset=0
+	'key' type_id=13 bits_offset=64
+	'value' type_id=17 bits_offset=128
+	'max_entries' type_id=20 bits_offset=192
+[23] VAR 'gadget_mntns_filter_map' type_id=22, linkage=global
+[24] PTR '(anon)' type_id=25
+[25] STRUCT 'arg' size=56 vlen=7
+	'ts' type_id=15 bits_offset=0
+	'flags' type_id=26 bits_offset=64
+	'src' type_id=27 bits_offset=128
+	'dest' type_id=27 bits_offset=192
+	'fs' type_id=27 bits_offset=256
+	'data' type_id=27 bits_offset=320
+	'op' type_id=30 bits_offset=384
+[26] ENUM 'flags_set' encoding=UNSIGNED size=8 vlen=32
+	'MS_RDONLY' val=1
+	'MS_NOSUID' val=2
+	'MS_NODEV' val=4
+	'MS_NOEXEC' val=8
+	'MS_SYNCHRONOUS' val=16
+	'MS_REMOUNT' val=32
+	'MS_MANDLOCK' val=64
+	'MS_DIRSYNC' val=128
+	'MS_NOSYMFOLLOW' val=256
+	'MS_NOATIME' val=512
+	'MS_NODIRATIME' val=1024
+	'MS_BIND' val=2048
+	'MS_MOVE' val=4096
+	'MS_REC' val=8192
+	'MS_VERBOSE' val=16384
+	'MS_SILENT' val=32768
+	'MS_POSIXACL' val=65536
+	'MS_UNBINDABLE' val=131072
+	'MS_PRIVATE' val=262144
+	'MS_SLAVE' val=524288
+	'MS_SHARED' val=1048576
+	'MS_RELATIME' val=2097152
+	'MS_KERNMOUNT' val=4194304
+	'MS_I_VERSION' val=8388608
+	'MS_STRICTATIME' val=16777216
+	'MS_LAZYTIME' val=33554432
+	'MS_SUBMOUNT' val=67108864
+	'MS_NOREMOTELOCK' val=134217728
+	'MS_NOSEC' val=268435456
+	'MS_BORN' val=536870912
+	'MS_ACTIVE' val=1073741824
+	'MS_NOUSER' val=2147483648
+[27] PTR '(anon)' type_id=28
+[28] CONST '(anon)' type_id=29
+[29] INT 'char' size=1 bits_offset=0 nr_bits=8 encoding=SIGNED
+[30] ENUM 'op' encoding=UNSIGNED size=4 vlen=2
+	'MOUNT' val=0
+	'UMOUNT' val=1
+[31] STRUCT '(anon)' size=32 vlen=4
+	'type' type_id=5 bits_offset=0
+	'max_entries' type_id=9 bits_offset=64
+	'key' type_id=17 bits_offset=128
+	'value' type_id=24 bits_offset=192
+[32] VAR 'args' type_id=31, linkage=global
+[33] PTR '(anon)' type_id=34
+[34] ARRAY '(anon)' type_id=2 index_type_id=4 nr_elems=27
+[35] PTR '(anon)' type_id=36
+[36] ARRAY '(anon)' type_id=2 index_type_id=4 nr_elems=262144
+[37] STRUCT '(anon)' size=16 vlen=2
+	'type' type_id=33 bits_offset=0
+	'max_entries' type_id=35 bits_offset=64
+[38] VAR 'events' type_id=37, linkage=global
+[39] PTR '(anon)' type_id=40
+[40] STRUCT 'syscall_trace_enter' size=16 vlen=3
+	'ent' type_id=41 bits_offset=0
+	'nr' type_id=2 bits_offset=64
+	'args' type_id=45 bits_offset=128
+[41] STRUCT 'trace_entry' size=8 vlen=4
+	'type' type_id=42 bits_offset=0
+	'flags' type_id=43 bits_offset=16
+	'preempt_count' type_id=43 bits_offset=24
+	'pid' type_id=2 bits_offset=32
+[42] INT 'unsigned short' size=2 bits_offset=0 nr_bits=16 encoding=(none)
+[43] INT 'unsigned char' size=1 bits_offset=0 nr_bits=8 encoding=(none)
+[44] INT 'unsigned long' size=8 bits_offset=0 nr_bits=64 encoding=(none)
+[45] ARRAY '(anon)' type_id=44 index_type_id=4 nr_elems=0
+[46] FUNC_PROTO '(anon)' ret_type_id=2 vlen=1
+	'ctx' type_id=39
+[47] FUNC 'ig_mount_e' type_id=46 linkage=global
+[48] STRUCT 'task_struct' size=9792 vlen=253
+	'thread_info' type_id=49 bits_offset=0
+	'__state' type_id=19 bits_offset=192
+	'stack' type_id=51 bits_offset=256
+	'usage' type_id=52 bits_offset=320
+	'flags' type_id=19 bits_offset=352
+	'ptrace' type_id=19 bits_offset=384
+	'on_cpu' type_id=2 bits_offset=416
+	'wake_entry' type_id=56 bits_offset=448
+	'wakee_flips' type_id=19 bits_offset=576
+	'wakee_flip_decay_ts' type_id=44 bits_offset=640
+	'last_wakee' type_id=62 bits_offset=704
+	'recent_used_cpu' type_id=2 bits_offset=768
+	'wake_cpu' type_id=2 bits_offset=800
+	'on_rq' type_id=2 bits_offset=832
+	'prio' type_id=2 bits_offset=864
+	'static_prio' type_id=2 bits_offset=896
+	'normal_prio' type_id=2 bits_offset=928
+	'rt_priority' type_id=19 bits_offset=960
+	'se' type_id=63 bits_offset=1024
+	'rt' type_id=74 bits_offset=3072
+	'dl' type_id=76 bits_offset=3456
+	'sched_class' type_id=91 bits_offset=5248
+	'core_node' type_id=65 bits_offset=5312
+	'core_cookie' type_id=44 bits_offset=5504
+	'core_occupation' type_id=19 bits_offset=5568
+	'sched_task_group' type_id=93 bits_offset=5632
+	'uclamp_req' type_id=95 bits_offset=5696
+	'uclamp' type_id=95 bits_offset=5760
+	'stats' type_id=96 bits_offset=6144
+	'preempt_notifiers' type_id=97 bits_offset=8192
+	'btrace_seq' type_id=19 bits_offset=8256
+	'policy' type_id=19 bits_offset=8288
+	'nr_cpus_allowed' type_id=2 bits_offset=8320
+	'cpus_ptr' type_id=99 bits_offset=8384
+	'user_cpus_ptr' type_id=102 bits_offset=8448
+	'cpus_mask' type_id=101 bits_offset=8512
+	'migration_pending' type_id=51 bits_offset=16704
+	'migration_disabled' type_id=42 bits_offset=16768
+	'migration_flags' type_id=42 bits_offset=16784
+	'rcu_read_lock_nesting' type_id=2 bits_offset=16800
+	'rcu_read_unlock_special' type_id=105 bits_offset=16832
+	'rcu_node_entry' type_id=67 bits_offset=16896
+	'rcu_blocked_node' type_id=107 bits_offset=17024
+	'rcu_tasks_nvcsw' type_id=44 bits_offset=17088
+	'rcu_tasks_holdout' type_id=88 bits_offset=17152
+	'rcu_tasks_idx' type_id=88 bits_offset=17160
+	'rcu_tasks_idle_cpu' type_id=2 bits_offset=17184
+	'rcu_tasks_holdout_list' type_id=67 bits_offset=17216
+	'trc_reader_nesting' type_id=2 bits_offset=17344
+	'trc_ipi_to_cpu' type_id=2 bits_offset=17376
+	'trc_reader_special' type_id=105 bits_offset=17408
+	'trc_reader_checked' type_id=108 bits_offset=17440
+	'trc_holdout_list' type_id=67 bits_offset=17472
+	'sched_info' type_id=110 bits_offset=17600
+	'tasks' type_id=67 bits_offset=17856
+	'pushable_tasks' type_id=111 bits_offset=17984
+	'pushable_dl_tasks' type_id=65 bits_offset=18304
+	'mm' type_id=112 bits_offset=18496
+	'active_mm' type_id=112 bits_offset=18560
+	'vmacache' type_id=113 bits_offset=18624
+	'rss_stat' type_id=133 bits_offset=18944
+	'exit_state' type_id=2 bits_offset=19104
+	'exit_code' type_id=2 bits_offset=19136
+	'exit_signal' type_id=2 bits_offset=19168
+	'pdeath_signal' type_id=2 bits_offset=19200
+	'jobctl' type_id=44 bits_offset=19264
+	'personality' type_id=19 bits_offset=19328
+	'sched_reset_on_fork' type_id=19 bits_offset=19360 bitfield_size=1
+	'sched_contributes_to_load' type_id=19 bits_offset=19361 bitfield_size=1
+	'sched_migrated' type_id=19 bits_offset=19362 bitfield_size=1
+	'sched_psi_wake_requeue' type_id=19 bits_offset=19363 bitfield_size=1
+	'sched_remote_wakeup' type_id=19 bits_offset=19392 bitfield_size=1
+	'in_execve' type_id=19 bits_offset=19393 bitfield_size=1
+	'in_iowait' type_id=19 bits_offset=19394 bitfield_size=1
+	'restore_sigmask' type_id=19 bits_offset=19395 bitfield_size=1
+	'in_user_fault' type_id=19 bits_offset=19396 bitfield_size=1
+	'no_cgroup_migration' type_id=19 bits_offset=19397 bitfield_size=1
+	'frozen' type_id=19 bits_offset=19398 bitfield_size=1
+	'use_memdelay' type_id=19 bits_offset=19399 bitfield_size=1
+	'in_memstall' type_id=19 bits_offset=19400 bitfield_size=1
+	'in_eventfd_signal' type_id=19 bits_offset=19401 bitfield_size=1
+	'pasid_activated' type_id=19 bits_offset=19402 bitfield_size=1
+	'reported_split_lock' type_id=19 bits_offset=19403 bitfield_size=1
+	'atomic_flags' type_id=44 bits_offset=19456
+	'restart_block' type_id=134 bits_offset=19520
+	'pid' type_id=151 bits_offset=19968
+	'tgid' type_id=151 bits_offset=20000
+	'stack_canary' type_id=44 bits_offset=20032
+	'real_parent' type_id=62 bits_offset=20096
+	'parent' type_id=62 bits_offset=20160
+	'children' type_id=67 bits_offset=20224
+	'sibling' type_id=67 bits_offset=20352
+	'group_leader' type_id=62 bits_offset=20480
+	'ptraced' type_id=67 bits_offset=20544
+	'ptrace_entry' type_id=67 bits_offset=20672
+	'thread_pid' type_id=153 bits_offset=20800
+	'pid_links' type_id=156 bits_offset=20864
+	'thread_group' type_id=67 bits_offset=21376
+	'thread_node' type_id=67 bits_offset=21504
+	'vfork_done' type_id=157 bits_offset=21632
+	'set_child_tid' type_id=158 bits_offset=21696
+	'clear_child_tid' type_id=158 bits_offset=21760
+	'worker_private' type_id=51 bits_offset=21824
+	'utime' type_id=69 bits_offset=21888
+	'stime' type_id=69 bits_offset=21952
+	'gtime' type_id=69 bits_offset=22016
+	'prev_cputime' type_id=159 bits_offset=22080
+	'nvcsw' type_id=44 bits_offset=22272
+	'nivcsw' type_id=44 bits_offset=22336
+	'start_time' type_id=69 bits_offset=22400
+	'start_boottime' type_id=69 bits_offset=22464
+	'min_flt' type_id=44 bits_offset=22528
+	'maj_flt' type_id=44 bits_offset=22592
+	'posix_cputimers' type_id=167 bits_offset=22656
+	'posix_cputimers_work' type_id=173 bits_offset=23296
+	'ptracer_cred' type_id=178 bits_offset=23488
+	'real_cred' type_id=178 bits_offset=23552
+	'cred' type_id=178 bits_offset=23616
+	'cached_requested_key' type_id=192 bits_offset=23680
+	'comm' type_id=198 bits_offset=23744
+	'nameidata' type_id=199 bits_offset=23872
+	'sysvsem' type_id=200 bits_offset=23936
+	'sysvshm' type_id=202 bits_offset=24000
+	'last_switch_count' type_id=44 bits_offset=24128
+	'last_switch_time' type_id=44 bits_offset=24192
+	'fs' type_id=203 bits_offset=24256
+	'files' type_id=204 bits_offset=24320
+	'io_uring' type_id=205 bits_offset=24384
+	'nsproxy' type_id=206 bits_offset=24448
+	'signal' type_id=207 bits_offset=24512
+	'sighand' type_id=208 bits_offset=24576
+	'blocked' type_id=209 bits_offset=24640
+	'real_blocked' type_id=209 bits_offset=24704
+	'saved_sigmask' type_id=209 bits_offset=24768
+	'pending' type_id=212 bits_offset=24832
+	'sas_ss_sp' type_id=44 bits_offset=25024
+	'sas_ss_size' type_id=213 bits_offset=25088
+	'sas_ss_flags' type_id=19 bits_offset=25152
+	'task_works' type_id=175 bits_offset=25216
+	'audit_context' type_id=216 bits_offset=25280
+	'loginuid' type_id=181 bits_offset=25344
+	'sessionid' type_id=19 bits_offset=25376
+	'seccomp' type_id=217 bits_offset=25408
+	'syscall_dispatch' type_id=219 bits_offset=25536
+	'parent_exec_id' type_id=69 bits_offset=25792
+	'self_exec_id' type_id=69 bits_offset=25856
+	'alloc_lock' type_id=221 bits_offset=25920
+	'pi_lock' type_id=160 bits_offset=25952
+	'wake_q' type_id=224 bits_offset=25984
+	'pi_waiters' type_id=170 bits_offset=26048
+	'pi_top_task' type_id=62 bits_offset=26176
+	'pi_blocked_on' type_id=226 bits_offset=26240
+	'journal_info' type_id=51 bits_offset=26304
+	'bio_list' type_id=227 bits_offset=26368
+	'plug' type_id=228 bits_offset=26432
+	'reclaim_state' type_id=229 bits_offset=26496
+	'backing_dev_info' type_id=230 bits_offset=26560
+	'io_context' type_id=231 bits_offset=26624
+	'capture_control' type_id=232 bits_offset=26688
+	'ptrace_message' type_id=44 bits_offset=26752
+	'last_siginfo' type_id=233 bits_offset=26816
+	'ioac' type_id=235 bits_offset=26880
+	'psi_flags' type_id=19 bits_offset=27328
+	'acct_rss_mem1' type_id=69 bits_offset=27392
+	'acct_vm_mem1' type_id=69 bits_offset=27456
+	'acct_timexpd' type_id=69 bits_offset=27520
+	'mems_allowed' type_id=236 bits_offset=27584
+	'mems_allowed_seq' type_id=239 bits_offset=28608
+	'cpuset_mem_spread_rotor' type_id=2 bits_offset=28640
+	'cpuset_slab_spread_rotor' type_id=2 bits_offset=28672
+	'cgroups' type_id=243 bits_offset=28736
+	'cg_list' type_id=67 bits_offset=28800
+	'closid' type_id=50 bits_offset=28928
+	'rmid' type_id=50 bits_offset=28960
+	'robust_list' type_id=244 bits_offset=28992
+	'compat_robust_list' type_id=245 bits_offset=29056
+	'pi_state_list' type_id=67 bits_offset=29120
+	'pi_state_cache' type_id=246 bits_offset=29248
+	'futex_exit_mutex' type_id=247 bits_offset=29312
+	'futex_state' type_id=19 bits_offset=29568
+	'perf_event_ctxp' type_id=253 bits_offset=29632
+	'perf_event_mutex' type_id=247 bits_offset=29760
+	'perf_event_list' type_id=67 bits_offset=30016
+	'preempt_disable_ip' type_id=44 bits_offset=30144
+	'mempolicy' type_id=129 bits_offset=30208
+	'il_prev' type_id=254 bits_offset=30272
+	'pref_node_fork' type_id=254 bits_offset=30288
+	'numa_scan_seq' type_id=2 bits_offset=30304
+	'numa_scan_period' type_id=19 bits_offset=30336
+	'numa_scan_period_max' type_id=19 bits_offset=30368
+	'numa_preferred_nid' type_id=2 bits_offset=30400
+	'numa_migrate_retry' type_id=44 bits_offset=30464
+	'node_stamp' type_id=69 bits_offset=30528
+	'last_task_numa_placement' type_id=69 bits_offset=30592
+	'last_sum_exec_runtime' type_id=69 bits_offset=30656
+	'numa_work' type_id=174 bits_offset=30720
+	'numa_group' type_id=255 bits_offset=30848
+	'numa_faults' type_id=256 bits_offset=30912
+	'total_numa_faults' type_id=44 bits_offset=30976
+	'numa_faults_locality' type_id=257 bits_offset=31040
+	'numa_pages_migrated' type_id=44 bits_offset=31232
+	'rseq' type_id=258 bits_offset=31296
+	'rseq_sig' type_id=50 bits_offset=31360
+	'rseq_event_mask' type_id=44 bits_offset=31424
+	'tlb_ubc' type_id=259 bits_offset=31488
+	'(anon)' type_id=261 bits_offset=39744
+	'splice_pipe' type_id=262 bits_offset=39872
+	'task_frag' type_id=263 bits_offset=39936
+	'delays' type_id=265 bits_offset=40064
+	'nr_dirtied' type_id=2 bits_offset=40128
+	'nr_dirtied_pause' type_id=2 bits_offset=40160
+	'dirty_paused_when' type_id=44 bits_offset=40192
+	'timer_slack_ns' type_id=69 bits_offset=40256
+	'default_timer_slack_ns' type_id=69 bits_offset=40320
+	'curr_ret_stack' type_id=2 bits_offset=40384
+	'curr_ret_depth' type_id=2 bits_offset=40416
+	'ret_stack' type_id=266 bits_offset=40448
+	'ftrace_timestamp' type_id=16 bits_offset=40512
+	'trace_overrun' type_id=54 bits_offset=40576
+	'tracing_graph_pause' type_id=54 bits_offset=40608
+	'trace' type_id=44 bits_offset=40640
+	'trace_recursion' type_id=44 bits_offset=40704
+	'memcg_in_oom' type_id=267 bits_offset=40768
+	'memcg_oom_gfp_mask' type_id=268 bits_offset=40832
+	'memcg_oom_order' type_id=2 bits_offset=40864
+	'memcg_nr_pages_over_high' type_id=19 bits_offset=40896
+	'active_memcg' type_id=267 bits_offset=40960
+	'throttle_queue' type_id=269 bits_offset=41024
+	'utask' type_id=270 bits_offset=41088
+	'sequential_io' type_id=19 bits_offset=41152
+	'sequential_io_avg' type_id=19 bits_offset=41184
+	'kmap_ctrl' type_id=271 bits_offset=41216
+	'pagefault_disabled' type_id=2 bits_offset=41216
+	'oom_reaper_list' type_id=62 bits_offset=41280
+	'oom_reaper_timer' type_id=272 bits_offset=41344
+	'stack_vm_area' type_id=276 bits_offset=41664
+	'stack_refcount' type_id=52 bits_offset=41728
+	'patch_state' type_id=2 bits_offset=41760
+	'security' type_id=51 bits_offset=41792
+	'bpf_storage' type_id=277 bits_offset=41856
+	'bpf_ctx' type_id=278 bits_offset=41920
+	'mce_vaddr' type_id=51 bits_offset=41984
+	'mce_kflags' type_id=15 bits_offset=42048
+	'mce_addr' type_id=69 bits_offset=42112
+	'mce_ripv' type_id=15 bits_offset=42176 bitfield_size=1
+	'mce_whole_page' type_id=15 bits_offset=42177 bitfield_size=1
+	'__mce_reserved' type_id=15 bits_offset=42178 bitfield_size=62
+	'mce_kill_me' type_id=174 bits_offset=42240
+	'mce_count' type_id=2 bits_offset=42368
+	'kretprobe_instances' type_id=279 bits_offset=42432
+	'rethooks' type_id=279 bits_offset=42496
+	'l1d_flush_kill' type_id=174 bits_offset=42560
+	'thread' type_id=280 bits_offset=43008
+[49] STRUCT 'thread_info' size=24 vlen=4
+	'flags' type_id=44 bits_offset=0
+	'syscall_work' type_id=44 bits_offset=64
+	'status' type_id=50 bits_offset=128
+	'cpu' type_id=50 bits_offset=160
+[50] TYPEDEF 'u32' type_id=18
+[51] PTR '(anon)' type_id=0
+[52] TYPEDEF 'refcount_t' type_id=53
+[53] STRUCT 'refcount_struct' size=4 vlen=1
+	'refs' type_id=54 bits_offset=0
+[54] TYPEDEF 'atomic_t' type_id=55
+[55] STRUCT '(anon)' size=4 vlen=1
+	'counter' type_id=2 bits_offset=0
+[56] STRUCT '__call_single_node' size=16 vlen=4
+	'llist' type_id=57 bits_offset=0
+	'(anon)' type_id=59 bits_offset=64
+	'src' type_id=60 bits_offset=96
+	'dst' type_id=60 bits_offset=112
+[57] STRUCT 'llist_node' size=8 vlen=1
+	'next' type_id=58 bits_offset=0
+[58] PTR '(anon)' type_id=57
+[59] UNION '(anon)' size=4 vlen=2
+	'u_flags' type_id=19 bits_offset=0
+	'a_flags' type_id=54 bits_offset=0
+[60] TYPEDEF 'u16' type_id=61
+[61] TYPEDEF '__u16' type_id=42
+[62] PTR '(anon)' type_id=48
+[63] STRUCT 'sched_entity' size=256 vlen=15
+	'load' type_id=64 bits_offset=0
+	'run_node' type_id=65 bits_offset=128
+	'group_node' type_id=67 bits_offset=320
+	'on_rq' type_id=19 bits_offset=448
+	'exec_start' type_id=69 bits_offset=512
+	'sum_exec_runtime' type_id=69 bits_offset=576
+	'vruntime' type_id=69 bits_offset=640
+	'prev_sum_exec_runtime' type_id=69 bits_offset=704
+	'nr_migrations' type_id=69 bits_offset=768
+	'depth' type_id=2 bits_offset=832
+	'parent' type_id=70 bits_offset=896
+	'cfs_rq' type_id=71 bits_offset=960
+	'my_q' type_id=71 bits_offset=1024
+	'runnable_weight' type_id=44 bits_offset=1088
+	'avg' type_id=72 bits_offset=1536
+[64] STRUCT 'load_weight' size=16 vlen=2
+	'weight' type_id=44 bits_offset=0
+	'inv_weight' type_id=50 bits_offset=64
+[65] STRUCT 'rb_node' size=24 vlen=3
+	'__rb_parent_color' type_id=44 bits_offset=0
+	'rb_right' type_id=66 bits_offset=64
+	'rb_left' type_id=66 bits_offset=128
+[66] PTR '(anon)' type_id=65
+[67] STRUCT 'list_head' size=16 vlen=2
+	'next' type_id=68 bits_offset=0
+	'prev' type_id=68 bits_offset=64
+[68] PTR '(anon)' type_id=67
+[69] TYPEDEF 'u64' type_id=15
+[70] PTR '(anon)' type_id=63
+[71] PTR '(anon)' type_id=462
+[72] STRUCT 'sched_avg' size=64 vlen=9
+	'last_update_time' type_id=69 bits_offset=0
+	'load_sum' type_id=69 bits_offset=64
+	'runnable_sum' type_id=69 bits_offset=128
+	'util_sum' type_id=50 bits_offset=192
+	'period_contrib' type_id=50 bits_offset=224
+	'load_avg' type_id=44 bits_offset=256
+	'runnable_avg' type_id=44 bits_offset=320
+	'util_avg' type_id=44 bits_offset=384
+	'util_est' type_id=73 bits_offset=448
+[73] STRUCT 'util_est' size=8 vlen=2
+	'enqueued' type_id=19 bits_offset=0
+	'ewma' type_id=19 bits_offset=32
+[74] STRUCT 'sched_rt_entity' size=48 vlen=7
+	'run_list' type_id=67 bits_offset=0
+	'timeout' type_id=44 bits_offset=128
+	'watchdog_stamp' type_id=44 bits_offset=192
+	'time_slice' type_id=19 bits_offset=256
+	'on_rq' type_id=42 bits_offset=288
+	'on_list' type_id=42 bits_offset=304
+	'back' type_id=75 bits_offset=320
+[75] PTR '(anon)' type_id=74
+[76] STRUCT 'sched_dl_entity' size=224 vlen=16
+	'rb_node' type_id=65 bits_offset=0
+	'dl_runtime' type_id=69 bits_offset=192
+	'dl_deadline' type_id=69 bits_offset=256
+	'dl_period' type_id=69 bits_offset=320
+	'dl_bw' type_id=69 bits_offset=384
+	'dl_density' type_id=69 bits_offset=448
+	'runtime' type_id=77 bits_offset=512
+	'deadline' type_id=69 bits_offset=576
+	'flags' type_id=19 bits_offset=640
+	'dl_throttled' type_id=19 bits_offset=672 bitfield_size=1
+	'dl_yielded' type_id=19 bits_offset=673 bitfield_size=1
+	'dl_non_contending' type_id=19 bits_offset=674 bitfield_size=1
+	'dl_overrun' type_id=19 bits_offset=675 bitfield_size=1
+	'dl_timer' type_id=80 bits_offset=704
+	'inactive_timer' type_id=80 bits_offset=1216
+	'pi_se' type_id=90 bits_offset=1728
+[77] TYPEDEF 's64' type_id=78
+[78] TYPEDEF '__s64' type_id=79
+[79] INT 'long long' size=8 bits_offset=0 nr_bits=64 encoding=SIGNED
+[80] STRUCT 'hrtimer' size=64 vlen=8
+	'node' type_id=81 bits_offset=0
+	'_softexpires' type_id=82 bits_offset=256
+	'function' type_id=83 bits_offset=320
+	'base' type_id=87 bits_offset=384
+	'state' type_id=88 bits_offset=448
+	'is_rel' type_id=88 bits_offset=456
+	'is_soft' type_id=88 bits_offset=464
+	'is_hard' type_id=88 bits_offset=472
+[81] STRUCT 'timerqueue_node' size=32 vlen=2
+	'node' type_id=65 bits_offset=0
+	'expires' type_id=82 bits_offset=192
+[82] TYPEDEF 'ktime_t' type_id=77
+[83] PTR '(anon)' type_id=84
+[84] FUNC_PROTO '(anon)' ret_type_id=85 vlen=1
+	'(anon)' type_id=86
+[85] ENUM 'hrtimer_restart' encoding=UNSIGNED size=4 vlen=2
+	'HRTIMER_NORESTART' val=0
+	'HRTIMER_RESTART' val=1
+[86] PTR '(anon)' type_id=80
+[87] PTR '(anon)' type_id=485
+[88] TYPEDEF 'u8' type_id=89
+[89] TYPEDEF '__u8' type_id=43
+[90] PTR '(anon)' type_id=76
+[91] PTR '(anon)' type_id=92
+[92] CONST '(anon)' type_id=513
+[93] PTR '(anon)' type_id=512
+[94] STRUCT 'uclamp_se' size=4 vlen=4
+	'value' type_id=19 bits_offset=0 bitfield_size=11
+	'bucket_id' type_id=19 bits_offset=11 bitfield_size=3
+	'active' type_id=19 bits_offset=14 bitfield_size=1
+	'user_defined' type_id=19 bits_offset=15 bitfield_size=1
+[95] ARRAY '(anon)' type_id=94 index_type_id=4 nr_elems=2
+[96] STRUCT 'sched_statistics' size=256 vlen=29
+	'wait_start' type_id=69 bits_offset=0
+	'wait_max' type_id=69 bits_offset=64
+	'wait_count' type_id=69 bits_offset=128
+	'wait_sum' type_id=69 bits_offset=192
+	'iowait_count' type_id=69 bits_offset=256
+	'iowait_sum' type_id=69 bits_offset=320
+	'sleep_start' type_id=69 bits_offset=384
+	'sleep_max' type_id=69 bits_offset=448
+	'sum_sleep_runtime' type_id=77 bits_offset=512
+	'block_start' type_id=69 bits_offset=576
+	'block_max' type_id=69 bits_offset=640
+	'sum_block_runtime' type_id=77 bits_offset=704
+	'exec_max' type_id=69 bits_offset=768
+	'slice_max' type_id=69 bits_offset=832
+	'nr_migrations_cold' type_id=69 bits_offset=896
+	'nr_failed_migrations_affine' type_id=69 bits_offset=960
+	'nr_failed_migrations_running' type_id=69 bits_offset=1024
+	'nr_failed_migrations_hot' type_id=69 bits_offset=1088
+	'nr_forced_migrations' type_id=69 bits_offset=1152
+	'nr_wakeups' type_id=69 bits_offset=1216
+	'nr_wakeups_sync' type_id=69 bits_offset=1280
+	'nr_wakeups_migrate' type_id=69 bits_offset=1344
+	'nr_wakeups_local' type_id=69 bits_offset=1408
+	'nr_wakeups_remote' type_id=69 bits_offset=1472
+	'nr_wakeups_affine' type_id=69 bits_offset=1536
+	'nr_wakeups_affine_attempts' type_id=69 bits_offset=1600
+	'nr_wakeups_passive' type_id=69 bits_offset=1664
+	'nr_wakeups_idle' type_id=69 bits_offset=1728
+	'core_forceidle_sum' type_id=69 bits_offset=1792
+[97] STRUCT 'hlist_head' size=8 vlen=1
+	'first' type_id=98 bits_offset=0
+[98] PTR '(anon)' type_id=154
+[99] PTR '(anon)' type_id=100
+[100] CONST '(anon)' type_id=101
+[101] TYPEDEF 'cpumask_t' type_id=103
+[102] PTR '(anon)' type_id=101
+[103] STRUCT 'cpumask' size=1024 vlen=1
+	'bits' type_id=104 bits_offset=0
+[104] ARRAY '(anon)' type_id=44 index_type_id=4 nr_elems=128
+[105] UNION 'rcu_special' size=4 vlen=2
+	'b' type_id=106 bits_offset=0
+	's' type_id=50 bits_offset=0
+[106] STRUCT '(anon)' size=4 vlen=4
+	'blocked' type_id=88 bits_offset=0
+	'need_qs' type_id=88 bits_offset=8
+	'exp_hint' type_id=88 bits_offset=16
+	'need_mb' type_id=88 bits_offset=24
+[107] PTR '(anon)' type_id=514
+[108] TYPEDEF 'bool' type_id=109
+[109] INT '_Bool' size=1 bits_offset=0 nr_bits=8 encoding=BOOL
+[110] STRUCT 'sched_info' size=32 vlen=4
+	'pcount' type_id=44 bits_offset=0
+	'run_delay' type_id=16 bits_offset=64
+	'last_arrival' type_id=16 bits_offset=128
+	'last_queued' type_id=16 bits_offset=192
+[111] STRUCT 'plist_node' size=40 vlen=3
+	'prio' type_id=2 bits_offset=0
+	'prio_list' type_id=67 bits_offset=64
+	'node_list' type_id=67 bits_offset=192
+[112] PTR '(anon)' type_id=463
+[113] STRUCT 'vmacache' size=40 vlen=2
+	'seqnum' type_id=69 bits_offset=0
+	'vmas' type_id=132 bits_offset=64
+[114] PTR '(anon)' type_id=115
+[115] STRUCT 'vm_area_struct' size=200 vlen=19
+	'vm_start' type_id=44 bits_offset=0
+	'vm_end' type_id=44 bits_offset=64
+	'vm_next' type_id=114 bits_offset=128
+	'vm_prev' type_id=114 bits_offset=192
+	'vm_rb' type_id=65 bits_offset=256
+	'rb_subtree_gap' type_id=44 bits_offset=448
+	'vm_mm' type_id=112 bits_offset=512
+	'vm_page_prot' type_id=116 bits_offset=576
+	'vm_flags' type_id=44 bits_offset=640
+	'(anon)' type_id=119 bits_offset=704
+	'anon_vma_chain' type_id=67 bits_offset=960
+	'anon_vma' type_id=122 bits_offset=1088
+	'vm_ops' type_id=123 bits_offset=1152
+	'vm_pgoff' type_id=44 bits_offset=1216
+	'vm_file' type_id=125 bits_offset=1280
+	'vm_private_data' type_id=51 bits_offset=1344
+	'swap_readahead_info' type_id=126 bits_offset=1408
+	'vm_policy' type_id=129 bits_offset=1472
+	'vm_userfaultfd_ctx' type_id=130 bits_offset=1536
+[116] TYPEDEF 'pgprot_t' type_id=117
+[117] STRUCT 'pgprot' size=8 vlen=1
+	'pgprot' type_id=118 bits_offset=0
+[118] TYPEDEF 'pgprotval_t' type_id=44
+[119] UNION '(anon)' size=32 vlen=2
+	'shared' type_id=120 bits_offset=0
+	'anon_name' type_id=121 bits_offset=0
+[120] STRUCT '(anon)' size=32 vlen=2
+	'rb' type_id=65 bits_offset=0
+	'rb_subtree_last' type_id=44 bits_offset=192
+[121] PTR '(anon)' type_id=464
+[122] PTR '(anon)' type_id=465
+[123] PTR '(anon)' type_id=124
+[124] CONST '(anon)' type_id=466
+[125] PTR '(anon)' type_id=467
+[126] TYPEDEF 'atomic_long_t' type_id=127
+[127] TYPEDEF 'atomic64_t' type_id=128
+[128] STRUCT '(anon)' size=8 vlen=1
+	'counter' type_id=77 bits_offset=0
+[129] PTR '(anon)' type_id=509
+[130] STRUCT 'vm_userfaultfd_ctx' size=8 vlen=1
+	'ctx' type_id=131 bits_offset=0
+[131] PTR '(anon)' type_id=510
+[132] ARRAY '(anon)' type_id=114 index_type_id=4 nr_elems=4
+[133] STRUCT 'task_rss_stat' size=20 vlen=2
+	'events' type_id=2 bits_offset=0
+	'count' type_id=8 bits_offset=32
+[134] STRUCT 'restart_block' size=56 vlen=3
+	'arch_data' type_id=44 bits_offset=0
+	'fn' type_id=135 bits_offset=64
+	'(anon)' type_id=139 bits_offset=128
+[135] PTR '(anon)' type_id=136
+[136] FUNC_PROTO '(anon)' ret_type_id=137 vlen=1
+	'(anon)' type_id=138
+[137] INT 'long' size=8 bits_offset=0 nr_bits=64 encoding=SIGNED
+[138] PTR '(anon)' type_id=134
+[139] UNION '(anon)' size=40 vlen=3
+	'futex' type_id=140 bits_offset=0
+	'nanosleep' type_id=142 bits_offset=0
+	'poll' type_id=149 bits_offset=0
+[140] STRUCT '(anon)' size=40 vlen=6
+	'uaddr' type_id=141 bits_offset=0
+	'val' type_id=50 bits_offset=64
+	'flags' type_id=50 bits_offset=96
+	'bitset' type_id=50 bits_offset=128
+	'time' type_id=69 bits_offset=192
+	'uaddr2' type_id=141 bits_offset=256
+[141] PTR '(anon)' type_id=50
+[142] STRUCT '(anon)' size=24 vlen=4
+	'clockid' type_id=143 bits_offset=0
+	'type' type_id=145 bits_offset=32
+	'(anon)' type_id=146 bits_offset=64
+	'expires' type_id=69 bits_offset=128
+[143] TYPEDEF 'clockid_t' type_id=144
+[144] TYPEDEF '__kernel_clockid_t' type_id=2
+[145] ENUM 'timespec_type' encoding=UNSIGNED size=4 vlen=3
+	'TT_NONE' val=0
+	'TT_NATIVE' val=1
+	'TT_COMPAT' val=2
+[146] UNION '(anon)' size=8 vlen=2
+	'rmtp' type_id=147 bits_offset=0
+	'compat_rmtp' type_id=148 bits_offset=0
+[147] PTR '(anon)' type_id=515
+[148] PTR '(anon)' type_id=516
+[149] STRUCT '(anon)' size=32 vlen=5
+	'ufds' type_id=150 bits_offset=0
+	'nfds' type_id=2 bits_offset=64
+	'has_timeout' type_id=2 bits_offset=96
+	'tv_sec' type_id=44 bits_offset=128
+	'tv_nsec' type_id=44 bits_offset=192
+[150] PTR '(anon)' type_id=517
+[151] TYPEDEF 'pid_t' type_id=152
+[152] TYPEDEF '__kernel_pid_t' type_id=2
+[153] PTR '(anon)' type_id=497
+[154] STRUCT 'hlist_node' size=16 vlen=2
+	'next' type_id=98 bits_offset=0
+	'pprev' type_id=155 bits_offset=64
+[155] PTR '(anon)' type_id=98
+[156] ARRAY '(anon)' type_id=154 index_type_id=4 nr_elems=4
+[157] PTR '(anon)' type_id=477
+[158] PTR '(anon)' type_id=2
+[159] STRUCT 'prev_cputime' size=24 vlen=3
+	'utime' type_id=69 bits_offset=0
+	'stime' type_id=69 bits_offset=64
+	'lock' type_id=160 bits_offset=128
+[160] TYPEDEF 'raw_spinlock_t' type_id=161
+[161] STRUCT 'raw_spinlock' size=4 vlen=1
+	'raw_lock' type_id=162 bits_offset=0
+[162] TYPEDEF 'arch_spinlock_t' type_id=163
+[163] STRUCT 'qspinlock' size=4 vlen=1
+	'(anon)' type_id=164 bits_offset=0
+[164] UNION '(anon)' size=4 vlen=3
+	'val' type_id=54 bits_offset=0
+	'(anon)' type_id=165 bits_offset=0
+	'(anon)' type_id=166 bits_offset=0
+[165] STRUCT '(anon)' size=2 vlen=2
+	'locked' type_id=88 bits_offset=0
+	'pending' type_id=88 bits_offset=8
+[166] STRUCT '(anon)' size=4 vlen=2
+	'locked_pending' type_id=60 bits_offset=0
+	'tail' type_id=60 bits_offset=16
+[167] STRUCT 'posix_cputimers' size=80 vlen=3
+	'bases' type_id=172 bits_offset=0
+	'timers_active' type_id=19 bits_offset=576
+	'expiry_active' type_id=19 bits_offset=608
+[168] STRUCT 'posix_cputimer_base' size=24 vlen=2
+	'nextevt' type_id=69 bits_offset=0
+	'tqhead' type_id=169 bits_offset=64
+[169] STRUCT 'timerqueue_head' size=16 vlen=1
+	'rb_root' type_id=170 bits_offset=0
+[170] STRUCT 'rb_root_cached' size=16 vlen=2
+	'rb_root' type_id=171 bits_offset=0
+	'rb_leftmost' type_id=66 bits_offset=64
+[171] STRUCT 'rb_root' size=8 vlen=1
+	'rb_node' type_id=66 bits_offset=0
+[172] ARRAY '(anon)' type_id=168 index_type_id=4 nr_elems=3
+[173] STRUCT 'posix_cputimers_work' size=24 vlen=2
+	'work' type_id=174 bits_offset=0
+	'scheduled' type_id=19 bits_offset=128
+[174] STRUCT 'callback_head' size=16 vlen=2
+	'next' type_id=175 bits_offset=0
+	'func' type_id=176 bits_offset=64
+[175] PTR '(anon)' type_id=174
+[176] PTR '(anon)' type_id=177
+[177] FUNC_PROTO '(anon)' ret_type_id=0 vlen=1
+	'(anon)' type_id=175
+[178] PTR '(anon)' type_id=179
+[179] CONST '(anon)' type_id=180
+[180] STRUCT 'cred' size=176 vlen=26
+	'usage' type_id=54 bits_offset=0
+	'uid' type_id=181 bits_offset=32
+	'gid' type_id=185 bits_offset=64
+	'suid' type_id=181 bits_offset=96
+	'sgid' type_id=185 bits_offset=128
+	'euid' type_id=181 bits_offset=160
+	'egid' type_id=185 bits_offset=192
+	'fsuid' type_id=181 bits_offset=224
+	'fsgid' type_id=185 bits_offset=256
+	'securebits' type_id=19 bits_offset=288
+	'cap_inheritable' type_id=189 bits_offset=320
+	'cap_permitted' type_id=189 bits_offset=384
+	'cap_effective' type_id=189 bits_offset=448
+	'cap_bset' type_id=189 bits_offset=512
+	'cap_ambient' type_id=189 bits_offset=576
+	'jit_keyring' type_id=43 bits_offset=640
+	'session_keyring' type_id=192 bits_offset=704
+	'process_keyring' type_id=192 bits_offset=768
+	'thread_keyring' type_id=192 bits_offset=832
+	'request_key_auth' type_id=192 bits_offset=896
+	'security' type_id=51 bits_offset=960
+	'user' type_id=193 bits_offset=1024
+	'user_ns' type_id=194 bits_offset=1088
+	'ucounts' type_id=195 bits_offset=1152
+	'group_info' type_id=196 bits_offset=1216
+	'(anon)' type_id=197 bits_offset=1280
+[181] TYPEDEF 'kuid_t' type_id=182
+[182] STRUCT '(anon)' size=4 vlen=1
+	'val' type_id=183 bits_offset=0
+[183] TYPEDEF 'uid_t' type_id=184
+[184] TYPEDEF '__kernel_uid32_t' type_id=19
+[185] TYPEDEF 'kgid_t' type_id=186
+[186] STRUCT '(anon)' size=4 vlen=1
+	'val' type_id=187 bits_offset=0
+[187] TYPEDEF 'gid_t' type_id=188
+[188] TYPEDEF '__kernel_gid32_t' type_id=19
+[189] TYPEDEF 'kernel_cap_t' type_id=190
+[190] STRUCT 'kernel_cap_struct' size=8 vlen=1
+	'cap' type_id=191 bits_offset=0
+[191] ARRAY '(anon)' type_id=18 index_type_id=4 nr_elems=2
+[192] PTR '(anon)' type_id=489
+[193] PTR '(anon)' type_id=470
+[194] PTR '(anon)' type_id=472
+[195] PTR '(anon)' type_id=475
+[196] PTR '(anon)' type_id=490
+[197] UNION '(anon)' size=16 vlen=2
+	'non_rcu' type_id=2 bits_offset=0
+	'rcu' type_id=174 bits_offset=0
+[198] ARRAY '(anon)' type_id=29 index_type_id=4 nr_elems=16
+[199] PTR '(anon)' type_id=518
+[200] STRUCT 'sysv_sem' size=8 vlen=1
+	'undo_list' type_id=201 bits_offset=0
+[201] PTR '(anon)' type_id=520
+[202] STRUCT 'sysv_shm' size=16 vlen=1
+	'shm_clist' type_id=67 bits_offset=0
+[203] PTR '(anon)' type_id=488
+[204] PTR '(anon)' type_id=494
+[205] PTR '(anon)' type_id=495
+[206] PTR '(anon)' type_id=380
+[207] PTR '(anon)' type_id=487
+[208] PTR '(anon)' type_id=521
+[209] TYPEDEF 'sigset_t' type_id=210
+[210] STRUCT '(anon)' size=8 vlen=1
+	'sig' type_id=211 bits_offset=0
+[211] ARRAY '(anon)' type_id=44 index_type_id=4 nr_elems=1
+[212] STRUCT 'sigpending' size=24 vlen=2
+	'list' type_id=67 bits_offset=0
+	'signal' type_id=209 bits_offset=128
+[213] TYPEDEF 'size_t' type_id=214
+[214] TYPEDEF '__kernel_size_t' type_id=215
+[215] TYPEDEF '__kernel_ulong_t' type_id=44
+[216] PTR '(anon)' type_id=519
+[217] STRUCT 'seccomp' size=16 vlen=3
+	'mode' type_id=2 bits_offset=0
+	'filter_count' type_id=54 bits_offset=32
+	'filter' type_id=218 bits_offset=64
+[218] PTR '(anon)' type_id=522
+[219] STRUCT 'syscall_user_dispatch' size=32 vlen=4
+	'selector' type_id=220 bits_offset=0
+	'offset' type_id=44 bits_offset=64
+	'len' type_id=44 bits_offset=128
+	'on_dispatch' type_id=108 bits_offset=192
+[220] PTR '(anon)' type_id=29
+[221] TYPEDEF 'spinlock_t' type_id=222
+[222] STRUCT 'spinlock' size=4 vlen=1
+	'(anon)' type_id=223 bits_offset=0
+[223] UNION '(anon)' size=4 vlen=1
+	'rlock' type_id=161 bits_offset=0
+[224] STRUCT 'wake_q_node' size=8 vlen=1
+	'next' type_id=225 bits_offset=0
+[225] PTR '(anon)' type_id=224
+[226] PTR '(anon)' type_id=523
+[227] PTR '(anon)' type_id=492
+[228] PTR '(anon)' type_id=496
+[229] PTR '(anon)' type_id=524
+[230] PTR '(anon)' type_id=491
+[231] PTR '(anon)' type_id=493
+[232] PTR '(anon)' type_id=525
+[233] PTR '(anon)' type_id=234
+[234] TYPEDEF 'kernel_siginfo_t' type_id=511
+[235] STRUCT 'task_io_accounting' size=56 vlen=7
+	'rchar' type_id=69 bits_offset=0
+	'wchar' type_id=69 bits_offset=64
+	'syscr' type_id=69 bits_offset=128
+	'syscw' type_id=69 bits_offset=192
+	'read_bytes' type_id=69 bits_offset=256
+	'write_bytes' type_id=69 bits_offset=320
+	'cancelled_write_bytes' type_id=69 bits_offset=384
+[236] TYPEDEF 'nodemask_t' type_id=237
+[237] STRUCT '(anon)' size=128 vlen=1
+	'bits' type_id=238 bits_offset=0
+[238] ARRAY '(anon)' type_id=44 index_type_id=4 nr_elems=16
+[239] TYPEDEF 'seqcount_spinlock_t' type_id=240
+[240] STRUCT 'seqcount_spinlock' size=4 vlen=1
+	'seqcount' type_id=241 bits_offset=0
+[241] TYPEDEF 'seqcount_t' type_id=242
+[242] STRUCT 'seqcount' size=4 vlen=1
+	'sequence' type_id=19 bits_offset=0
+[243] PTR '(anon)' type_id=482
+[244] PTR '(anon)' type_id=526
+[245] PTR '(anon)' type_id=527
+[246] PTR '(anon)' type_id=528
+[247] STRUCT 'mutex' size=32 vlen=4
+	'owner' type_id=126 bits_offset=0
+	'wait_lock' type_id=160 bits_offset=64
+	'osq' type_id=248 bits_offset=96
+	'wait_list' type_id=67 bits_offset=128
+[248] STRUCT 'optimistic_spin_queue' size=4 vlen=1
+	'tail' type_id=54 bits_offset=0
+[249] PTR '(anon)' type_id=250
+[250] STRUCT 'perf_event_context' size=272 vlen=29
+	'pmu' type_id=251 bits_offset=0
+	'lock' type_id=160 bits_offset=64
+	'mutex' type_id=247 bits_offset=128
+	'active_ctx_list' type_id=67 bits_offset=384
+	'pinned_groups' type_id=252 bits_offset=512
+	'flexible_groups' type_id=252 bits_offset=640
+	'event_list' type_id=67 bits_offset=768
+	'pinned_active' type_id=67 bits_offset=896
+	'flexible_active' type_id=67 bits_offset=1024
+	'nr_events' type_id=2 bits_offset=1152
+	'nr_active' type_id=2 bits_offset=1184
+	'nr_user' type_id=2 bits_offset=1216
+	'is_active' type_id=2 bits_offset=1248
+	'nr_stat' type_id=2 bits_offset=1280
+	'nr_freq' type_id=2 bits_offset=1312
+	'rotate_disable' type_id=2 bits_offset=1344
+	'rotate_necessary' type_id=2 bits_offset=1376
+	'refcount' type_id=52 bits_offset=1408
+	'task' type_id=62 bits_offset=1472
+	'time' type_id=69 bits_offset=1536
+	'timestamp' type_id=69 bits_offset=1600
+	'timeoffset' type_id=69 bits_offset=1664
+	'parent_ctx' type_id=249 bits_offset=1728
+	'parent_gen' type_id=69 bits_offset=1792
+	'generation' type_id=69 bits_offset=1856
+	'pin_count' type_id=2 bits_offset=1920
+	'nr_cgroups' type_id=2 bits_offset=1952
+	'task_ctx_data' type_id=51 bits_offset=1984
+	'callback_head' type_id=174 bits_offset=2048
+[251] PTR '(anon)' type_id=501
+[252] STRUCT 'perf_event_groups' size=16 vlen=2
+	'tree' type_id=171 bits_offset=0
+	'index' type_id=69 bits_offset=64
+[253] ARRAY '(anon)' type_id=249 index_type_id=4 nr_elems=2
+[254] INT 'short' size=2 bits_offset=0 nr_bits=16 encoding=SIGNED
+[255] PTR '(anon)' type_id=529
+[256] PTR '(anon)' type_id=44
+[257] ARRAY '(anon)' type_id=44 index_type_id=4 nr_elems=3
+[258] PTR '(anon)' type_id=530
+[259] STRUCT 'tlbflush_unmap_batch' size=1032 vlen=3
+	'arch' type_id=260 bits_offset=0
+	'flush_required' type_id=108 bits_offset=8192
+	'writable' type_id=108 bits_offset=8200
+[260] STRUCT 'arch_tlbflush_unmap_batch' size=1024 vlen=1
+	'cpumask' type_id=103 bits_offset=0
+[261] UNION '(anon)' size=16 vlen=2
+	'rcu_users' type_id=52 bits_offset=0
+	'rcu' type_id=174 bits_offset=0
+[262] PTR '(anon)' type_id=468
+[263] STRUCT 'page_frag' size=16 vlen=3
+	'page' type_id=264 bits_offset=0
+	'offset' type_id=18 bits_offset=64
+	'size' type_id=18 bits_offset=96
+[264] PTR '(anon)' type_id=461
+[265] PTR '(anon)' type_id=531
+[266] PTR '(anon)' type_id=532
+[267] PTR '(anon)' type_id=484
+[268] TYPEDEF 'gfp_t' type_id=19
+[269] PTR '(anon)' type_id=508
+[270] PTR '(anon)' type_id=533
+[271] STRUCT 'kmap_ctrl' size=0 vlen=0
+[272] STRUCT 'timer_list' size=40 vlen=4
+	'entry' type_id=154 bits_offset=0
+	'expires' type_id=44 bits_offset=128
+	'function' type_id=273 bits_offset=192
+	'flags' type_id=50 bits_offset=256
+[273] PTR '(anon)' type_id=274
+[274] FUNC_PROTO '(anon)' ret_type_id=0 vlen=1
+	'(anon)' type_id=275
+[275] PTR '(anon)' type_id=272
+[276] PTR '(anon)' type_id=534
+[277] PTR '(anon)' type_id=483
+[278] PTR '(anon)' type_id=535
+[279] STRUCT 'llist_head' size=8 vlen=1
+	'first' type_id=58 bits_offset=0
+[280] STRUCT 'thread_struct' size=4416 vlen=20
+	'tls_array' type_id=282 bits_offset=0
+	'sp' type_id=44 bits_offset=192
+	'es' type_id=42 bits_offset=256
+	'ds' type_id=42 bits_offset=272
+	'fsindex' type_id=42 bits_offset=288
+	'gsindex' type_id=42 bits_offset=304
+	'fsbase' type_id=44 bits_offset=320
+	'gsbase' type_id=44 bits_offset=384
+	'ptrace_bps' type_id=356 bits_offset=448
+	'virtual_dr6' type_id=44 bits_offset=704
+	'ptrace_dr7' type_id=44 bits_offset=768
+	'cr2' type_id=44 bits_offset=832
+	'trap_nr' type_id=44 bits_offset=896
+	'error_code' type_id=44 bits_offset=960
+	'io_bitmap' type_id=357 bits_offset=1024
+	'iopl_emul' type_id=44 bits_offset=1088
+	'iopl_warn' type_id=19 bits_offset=1152 bitfield_size=1
+	'sig_on_uaccess_err' type_id=19 bits_offset=1153 bitfield_size=1
+	'pkru' type_id=50 bits_offset=1184
+	'fpu' type_id=358 bits_offset=1536
+[281] STRUCT 'desc_struct' size=8 vlen=13
+	'limit0' type_id=60 bits_offset=0
+	'base0' type_id=60 bits_offset=16
+	'base1' type_id=60 bits_offset=32 bitfield_size=8
+	'type' type_id=60 bits_offset=40 bitfield_size=4
+	's' type_id=60 bits_offset=44 bitfield_size=1
+	'dpl' type_id=60 bits_offset=45 bitfield_size=2
+	'p' type_id=60 bits_offset=47 bitfield_size=1
+	'limit1' type_id=60 bits_offset=48 bitfield_size=4
+	'avl' type_id=60 bits_offset=52 bitfield_size=1
+	'l' type_id=60 bits_offset=53 bitfield_size=1
+	'd' type_id=60 bits_offset=54 bitfield_size=1
+	'g' type_id=60 bits_offset=55 bitfield_size=1
+	'base2' type_id=60 bits_offset=56 bitfield_size=8
+[282] ARRAY '(anon)' type_id=281 index_type_id=4 nr_elems=3
+[283] PTR '(anon)' type_id=284
+[284] STRUCT 'perf_event' size=1200 vlen=71
+	'event_entry' type_id=67 bits_offset=0
+	'sibling_list' type_id=67 bits_offset=128
+	'active_list' type_id=67 bits_offset=256
+	'group_node' type_id=65 bits_offset=384
+	'group_index' type_id=69 bits_offset=576
+	'migrate_entry' type_id=67 bits_offset=640
+	'hlist_entry' type_id=154 bits_offset=768
+	'active_entry' type_id=67 bits_offset=896
+	'nr_siblings' type_id=2 bits_offset=1024
+	'event_caps' type_id=2 bits_offset=1056
+	'group_caps' type_id=2 bits_offset=1088
+	'group_leader' type_id=283 bits_offset=1152
+	'pmu' type_id=251 bits_offset=1216
+	'pmu_private' type_id=51 bits_offset=1280
+	'state' type_id=285 bits_offset=1344
+	'attach_state' type_id=19 bits_offset=1376
+	'count' type_id=286 bits_offset=1408
+	'child_count' type_id=127 bits_offset=1472
+	'total_time_enabled' type_id=69 bits_offset=1536
+	'total_time_running' type_id=69 bits_offset=1600
+	'tstamp' type_id=69 bits_offset=1664
+	'attr' type_id=290 bits_offset=1728
+	'header_size' type_id=60 bits_offset=2752
+	'id_header_size' type_id=60 bits_offset=2768
+	'read_size' type_id=60 bits_offset=2784
+	'hw' type_id=296 bits_offset=2816
+	'ctx' type_id=249 bits_offset=4352
+	'refcount' type_id=126 bits_offset=4416
+	'child_total_time_enabled' type_id=127 bits_offset=4480
+	'child_total_time_running' type_id=127 bits_offset=4544
+	'child_mutex' type_id=247 bits_offset=4608
+	'child_list' type_id=67 bits_offset=4864
+	'parent' type_id=283 bits_offset=4992
+	'oncpu' type_id=2 bits_offset=5056
+	'cpu' type_id=2 bits_offset=5088
+	'owner_entry' type_id=67 bits_offset=5120
+	'owner' type_id=62 bits_offset=5248
+	'mmap_mutex' type_id=247 bits_offset=5312
+	'mmap_count' type_id=54 bits_offset=5568
+	'rb' type_id=309 bits_offset=5632
+	'rb_entry' type_id=67 bits_offset=5696
+	'rcu_batches' type_id=44 bits_offset=5824
+	'rcu_pending' type_id=2 bits_offset=5888
+	'waitq' type_id=310 bits_offset=5952
+	'fasync' type_id=312 bits_offset=6144
+	'pending_wakeup' type_id=2 bits_offset=6208
+	'pending_kill' type_id=2 bits_offset=6240
+	'pending_disable' type_id=2 bits_offset=6272
+	'pending_addr' type_id=44 bits_offset=6336
+	'pending' type_id=313 bits_offset=6400
+	'event_limit' type_id=54 bits_offset=6656
+	'addr_filters' type_id=318 bits_offset=6720
+	'addr_filter_ranges' type_id=319 bits_offset=6912
+	'addr_filters_gen' type_id=44 bits_offset=6976
+	'aux_event' type_id=283 bits_offset=7040
+	'destroy' type_id=320 bits_offset=7104
+	'callback_head' type_id=174 bits_offset=7168
+	'ns' type_id=322 bits_offset=7296
+	'id' type_id=69 bits_offset=7360
+	'clock' type_id=323 bits_offset=7424
+	'overflow_handler' type_id=325 bits_offset=7488
+	'overflow_handler_context' type_id=51 bits_offset=7552
+	'orig_overflow_handler' type_id=325 bits_offset=7616
+	'prog' type_id=342 bits_offset=7680
+	'bpf_cookie' type_id=69 bits_offset=7744
+	'tp_event' type_id=343 bits_offset=7808
+	'filter' type_id=344 bits_offset=7872
+	'ftrace_ops' type_id=345 bits_offset=7936
+	'cgrp' type_id=355 bits_offset=9344
+	'security' type_id=51 bits_offset=9408
+	'sb_list' type_id=67 bits_offset=9472
+[285] ENUM 'perf_event_state' encoding=UNSIGNED size=4 vlen=6
+	'PERF_EVENT_STATE_DEAD' val=4294967292
+	'PERF_EVENT_STATE_EXIT' val=4294967293
+	'PERF_EVENT_STATE_ERROR' val=4294967294
+	'PERF_EVENT_STATE_OFF' val=4294967295
+	'PERF_EVENT_STATE_INACTIVE' val=0
+	'PERF_EVENT_STATE_ACTIVE' val=1
+[286] TYPEDEF 'local64_t' type_id=287
+[287] STRUCT '(anon)' size=8 vlen=1
+	'a' type_id=288 bits_offset=0
+[288] TYPEDEF 'local_t' type_id=289
+[289] STRUCT '(anon)' size=8 vlen=1
+	'a' type_id=126 bits_offset=0
+[290] STRUCT 'perf_event_attr' size=128 vlen=59
+	'type' type_id=18 bits_offset=0
+	'size' type_id=18 bits_offset=32
+	'config' type_id=15 bits_offset=64
+	'(anon)' type_id=291 bits_offset=128
+	'sample_type' type_id=15 bits_offset=192
+	'read_format' type_id=15 bits_offset=256
+	'disabled' type_id=15 bits_offset=320 bitfield_size=1
+	'inherit' type_id=15 bits_offset=321 bitfield_size=1
+	'pinned' type_id=15 bits_offset=322 bitfield_size=1
+	'exclusive' type_id=15 bits_offset=323 bitfield_size=1
+	'exclude_user' type_id=15 bits_offset=324 bitfield_size=1
+	'exclude_kernel' type_id=15 bits_offset=325 bitfield_size=1
+	'exclude_hv' type_id=15 bits_offset=326 bitfield_size=1
+	'exclude_idle' type_id=15 bits_offset=327 bitfield_size=1
+	'mmap' type_id=15 bits_offset=328 bitfield_size=1
+	'comm' type_id=15 bits_offset=329 bitfield_size=1
+	'freq' type_id=15 bits_offset=330 bitfield_size=1
+	'inherit_stat' type_id=15 bits_offset=331 bitfield_size=1
+	'enable_on_exec' type_id=15 bits_offset=332 bitfield_size=1
+	'task' type_id=15 bits_offset=333 bitfield_size=1
+	'watermark' type_id=15 bits_offset=334 bitfield_size=1
+	'precise_ip' type_id=15 bits_offset=335 bitfield_size=2
+	'mmap_data' type_id=15 bits_offset=337 bitfield_size=1
+	'sample_id_all' type_id=15 bits_offset=338 bitfield_size=1
+	'exclude_host' type_id=15 bits_offset=339 bitfield_size=1
+	'exclude_guest' type_id=15 bits_offset=340 bitfield_size=1
+	'exclude_callchain_kernel' type_id=15 bits_offset=341 bitfield_size=1
+	'exclude_callchain_user' type_id=15 bits_offset=342 bitfield_size=1
+	'mmap2' type_id=15 bits_offset=343 bitfield_size=1
+	'comm_exec' type_id=15 bits_offset=344 bitfield_size=1
+	'use_clockid' type_id=15 bits_offset=345 bitfield_size=1
+	'context_switch' type_id=15 bits_offset=346 bitfield_size=1
+	'write_backward' type_id=15 bits_offset=347 bitfield_size=1
+	'namespaces' type_id=15 bits_offset=348 bitfield_size=1
+	'ksymbol' type_id=15 bits_offset=349 bitfield_size=1
+	'bpf_event' type_id=15 bits_offset=350 bitfield_size=1
+	'aux_output' type_id=15 bits_offset=351 bitfield_size=1
+	'cgroup' type_id=15 bits_offset=352 bitfield_size=1
+	'text_poke' type_id=15 bits_offset=353 bitfield_size=1
+	'build_id' type_id=15 bits_offset=354 bitfield_size=1
+	'inherit_thread' type_id=15 bits_offset=355 bitfield_size=1
+	'remove_on_exec' type_id=15 bits_offset=356 bitfield_size=1
+	'sigtrap' type_id=15 bits_offset=357 bitfield_size=1
+	'__reserved_1' type_id=15 bits_offset=358 bitfield_size=26
+	'(anon)' type_id=292 bits_offset=384
+	'bp_type' type_id=18 bits_offset=416
+	'(anon)' type_id=293 bits_offset=448
+	'(anon)' type_id=294 bits_offset=512
+	'branch_sample_type' type_id=15 bits_offset=576
+	'sample_regs_user' type_id=15 bits_offset=640
+	'sample_stack_user' type_id=18 bits_offset=704
+	'clockid' type_id=295 bits_offset=736
+	'sample_regs_intr' type_id=15 bits_offset=768
+	'aux_watermark' type_id=18 bits_offset=832
+	'sample_max_stack' type_id=61 bits_offset=864
+	'__reserved_2' type_id=61 bits_offset=880
+	'aux_sample_size' type_id=18 bits_offset=896
+	'__reserved_3' type_id=18 bits_offset=928
+	'sig_data' type_id=15 bits_offset=960
+[291] UNION '(anon)' size=8 vlen=2
+	'sample_period' type_id=15 bits_offset=0
+	'sample_freq' type_id=15 bits_offset=0
+[292] UNION '(anon)' size=4 vlen=2
+	'wakeup_events' type_id=18 bits_offset=0
+	'wakeup_watermark' type_id=18 bits_offset=0
+[293] UNION '(anon)' size=8 vlen=4
+	'bp_addr' type_id=15 bits_offset=0
+	'kprobe_func' type_id=15 bits_offset=0
+	'uprobe_path' type_id=15 bits_offset=0
+	'config1' type_id=15 bits_offset=0
+[294] UNION '(anon)' size=8 vlen=4
+	'bp_len' type_id=15 bits_offset=0
+	'kprobe_addr' type_id=15 bits_offset=0
+	'probe_offset' type_id=15 bits_offset=0
+	'config2' type_id=15 bits_offset=0
+[295] TYPEDEF '__s32' type_id=2
+[296] STRUCT 'hw_perf_event' size=192 vlen=12
+	'(anon)' type_id=297 bits_offset=0
+	'target' type_id=62 bits_offset=768
+	'addr_filters' type_id=51 bits_offset=832
+	'addr_filters_gen' type_id=44 bits_offset=896
+	'state' type_id=2 bits_offset=960
+	'prev_count' type_id=286 bits_offset=1024
+	'sample_period' type_id=69 bits_offset=1088
+	'(anon)' type_id=306 bits_offset=1152
+	'interrupts_seq' type_id=69 bits_offset=1280
+	'interrupts' type_id=69 bits_offset=1344
+	'freq_time_stamp' type_id=69 bits_offset=1408
+	'freq_count_stamp' type_id=69 bits_offset=1472
+[297] UNION '(anon)' size=96 vlen=6
+	'(anon)' type_id=298 bits_offset=0
+	'(anon)' type_id=300 bits_offset=0
+	'(anon)' type_id=301 bits_offset=0
+	'(anon)' type_id=302 bits_offset=0
+	'(anon)' type_id=303 bits_offset=0
+	'(anon)' type_id=305 bits_offset=0
+[298] STRUCT '(anon)' size=96 vlen=10
+	'config' type_id=69 bits_offset=0
+	'last_tag' type_id=69 bits_offset=64
+	'config_base' type_id=44 bits_offset=128
+	'event_base' type_id=44 bits_offset=192
+	'event_base_rdpmc' type_id=2 bits_offset=256
+	'idx' type_id=2 bits_offset=288
+	'last_cpu' type_id=2 bits_offset=320
+	'flags' type_id=2 bits_offset=352
+	'extra_reg' type_id=299 bits_offset=384
+	'branch_reg' type_id=299 bits_offset=576
+[299] STRUCT 'hw_perf_event_extra' size=24 vlen=4
+	'config' type_id=69 bits_offset=0
+	'reg' type_id=19 bits_offset=64
+	'alloc' type_id=2 bits_offset=96
+	'idx' type_id=2 bits_offset=128
+[300] STRUCT '(anon)' size=64 vlen=1
+	'hrtimer' type_id=80 bits_offset=0
+[301] STRUCT '(anon)' size=16 vlen=1
+	'tp_list' type_id=67 bits_offset=0
+[302] STRUCT '(anon)' size=16 vlen=2
+	'pwr_acc' type_id=69 bits_offset=0
+	'ptsc' type_id=69 bits_offset=64
+[303] STRUCT '(anon)' size=40 vlen=2
+	'info' type_id=304 bits_offset=0
+	'bp_list' type_id=67 bits_offset=192
+[304] STRUCT 'arch_hw_breakpoint' size=24 vlen=4
+	'address' type_id=44 bits_offset=0
+	'mask' type_id=44 bits_offset=64
+	'len' type_id=88 bits_offset=128
+	'type' type_id=88 bits_offset=136
+[305] STRUCT '(anon)' size=24 vlen=5
+	'iommu_bank' type_id=88 bits_offset=0
+	'iommu_cntr' type_id=88 bits_offset=8
+	'padding' type_id=60 bits_offset=16
+	'conf' type_id=69 bits_offset=64
+	'conf1' type_id=69 bits_offset=128
+[306] UNION '(anon)' size=16 vlen=2
+	'(anon)' type_id=307 bits_offset=0
+	'(anon)' type_id=308 bits_offset=0
+[307] STRUCT '(anon)' size=16 vlen=2
+	'last_period' type_id=69 bits_offset=0
+	'period_left' type_id=286 bits_offset=64
+[308] STRUCT '(anon)' size=16 vlen=2
+	'saved_metric' type_id=69 bits_offset=0
+	'saved_slots' type_id=69 bits_offset=64
+[309] PTR '(anon)' type_id=503
+[310] TYPEDEF 'wait_queue_head_t' type_id=311
+[311] STRUCT 'wait_queue_head' size=24 vlen=2
+	'lock' type_id=221 bits_offset=0
+	'head' type_id=67 bits_offset=64
+[312] PTR '(anon)' type_id=469
+[313] STRUCT 'irq_work' size=32 vlen=3
+	'node' type_id=56 bits_offset=0
+	'func' type_id=314 bits_offset=128
+	'irqwait' type_id=317 bits_offset=192
+[314] PTR '(anon)' type_id=315
+[315] FUNC_PROTO '(anon)' ret_type_id=0 vlen=1
+	'(anon)' type_id=316
+[316] PTR '(anon)' type_id=313
+[317] STRUCT 'rcuwait' size=8 vlen=1
+	'task' type_id=62 bits_offset=0
+[318] STRUCT 'perf_addr_filters_head' size=24 vlen=3
+	'list' type_id=67 bits_offset=0
+	'lock' type_id=160 bits_offset=128
+	'nr_file_filters' type_id=19 bits_offset=160
+[319] PTR '(anon)' type_id=504
+[320] PTR '(anon)' type_id=321
+[321] FUNC_PROTO '(anon)' ret_type_id=0 vlen=1
+	'(anon)' type_id=283
+[322] PTR '(anon)' type_id=479
+[323] PTR '(anon)' type_id=324
+[324] FUNC_PROTO '(anon)' ret_type_id=69 vlen=1
+	'(anon)' type_id=0
+[325] TYPEDEF 'perf_overflow_handler_t' type_id=326
+[326] PTR '(anon)' type_id=327
+[327] FUNC_PROTO '(anon)' ret_type_id=0 vlen=3
+	'(anon)' type_id=283
+	'(anon)' type_id=328
+	'(anon)' type_id=340
+[328] PTR '(anon)' type_id=329
+[329] STRUCT 'perf_sample_data' size=256 vlen=23
+	'addr' type_id=69 bits_offset=0
+	'raw' type_id=330 bits_offset=64
+	'br_stack' type_id=331 bits_offset=128
+	'period' type_id=69 bits_offset=192
+	'weight' type_id=332 bits_offset=256
+	'txn' type_id=69 bits_offset=320
+	'data_src' type_id=334 bits_offset=384
+	'type' type_id=69 bits_offset=448
+	'ip' type_id=69 bits_offset=512
+	'tid_entry' type_id=336 bits_offset=576
+	'time' type_id=69 bits_offset=640
+	'id' type_id=69 bits_offset=704
+	'stream_id' type_id=69 bits_offset=768
+	'cpu_entry' type_id=337 bits_offset=832
+	'callchain' type_id=338 bits_offset=896
+	'aux_size' type_id=69 bits_offset=960
+	'regs_user' type_id=339 bits_offset=1024
+	'regs_intr' type_id=339 bits_offset=1152
+	'stack_user_size' type_id=69 bits_offset=1280
+	'phys_addr' type_id=69 bits_offset=1344
+	'cgroup' type_id=69 bits_offset=1408
+	'data_page_size' type_id=69 bits_offset=1472
+	'code_page_size' type_id=69 bits_offset=1536
+[330] PTR '(anon)' type_id=505
+[331] PTR '(anon)' type_id=506
+[332] UNION 'perf_sample_weight' size=8 vlen=2
+	'full' type_id=15 bits_offset=0
+	'(anon)' type_id=333 bits_offset=0
+[333] STRUCT '(anon)' size=8 vlen=3
+	'var1_dw' type_id=18 bits_offset=0
+	'var2_w' type_id=61 bits_offset=32
+	'var3_w' type_id=61 bits_offset=48
+[334] UNION 'perf_mem_data_src' size=8 vlen=2
+	'val' type_id=15 bits_offset=0
+	'(anon)' type_id=335 bits_offset=0
+[335] STRUCT '(anon)' size=8 vlen=11
+	'mem_op' type_id=15 bits_offset=0 bitfield_size=5
+	'mem_lvl' type_id=15 bits_offset=5 bitfield_size=14
+	'mem_snoop' type_id=15 bits_offset=19 bitfield_size=5
+	'mem_lock' type_id=15 bits_offset=24 bitfield_size=2
+	'mem_dtlb' type_id=15 bits_offset=26 bitfield_size=7
+	'mem_lvl_num' type_id=15 bits_offset=33 bitfield_size=4
+	'mem_remote' type_id=15 bits_offset=37 bitfield_size=1
+	'mem_snoopx' type_id=15 bits_offset=38 bitfield_size=2
+	'mem_blk' type_id=15 bits_offset=40 bitfield_size=3
+	'mem_hops' type_id=15 bits_offset=43 bitfield_size=3
+	'mem_rsvd' type_id=15 bits_offset=46 bitfield_size=18
+[336] STRUCT '(anon)' size=8 vlen=2
+	'pid' type_id=50 bits_offset=0
+	'tid' type_id=50 bits_offset=32
+[337] STRUCT '(anon)' size=8 vlen=2
+	'cpu' type_id=50 bits_offset=0
+	'reserved' type_id=50 bits_offset=32
+[338] PTR '(anon)' type_id=507
+[339] STRUCT 'perf_regs' size=16 vlen=2
+	'abi' type_id=15 bits_offset=0
+	'regs' type_id=340 bits_offset=64
+[340] PTR '(anon)' type_id=341
+[341] STRUCT 'pt_regs' size=168 vlen=21
+	'r15' type_id=44 bits_offset=0
+	'r14' type_id=44 bits_offset=64
+	'r13' type_id=44 bits_offset=128
+	'r12' type_id=44 bits_offset=192
+	'bp' type_id=44 bits_offset=256
+	'bx' type_id=44 bits_offset=320
+	'r11' type_id=44 bits_offset=384
+	'r10' type_id=44 bits_offset=448
+	'r9' type_id=44 bits_offset=512
+	'r8' type_id=44 bits_offset=576
+	'ax' type_id=44 bits_offset=640
+	'cx' type_id=44 bits_offset=704
+	'dx' type_id=44 bits_offset=768
+	'si' type_id=44 bits_offset=832
+	'di' type_id=44 bits_offset=896
+	'orig_ax' type_id=44 bits_offset=960
+	'ip' type_id=44 bits_offset=1024
+	'cs' type_id=44 bits_offset=1088
+	'flags' type_id=44 bits_offset=1152
+	'sp' type_id=44 bits_offset=1216
+	'ss' type_id=44 bits_offset=1280
+[342] PTR '(anon)' type_id=486
+[343] PTR '(anon)' type_id=498
+[344] PTR '(anon)' type_id=499
+[345] STRUCT 'ftrace_ops' size=176 vlen=11
+	'func' type_id=346 bits_offset=0
+	'next' type_id=349 bits_offset=64
+	'flags' type_id=44 bits_offset=128
+	'private' type_id=51 bits_offset=192
+	'saved_func' type_id=346 bits_offset=256
+	'local_hash' type_id=352 bits_offset=320
+	'func_hash' type_id=354 bits_offset=704
+	'old_hash' type_id=352 bits_offset=768
+	'trampoline' type_id=44 bits_offset=1152
+	'trampoline_size' type_id=44 bits_offset=1216
+	'list' type_id=67 bits_offset=1280
+[346] TYPEDEF 'ftrace_func_t' type_id=347
+[347] PTR '(anon)' type_id=348
+[348] FUNC_PROTO '(anon)' ret_type_id=0 vlen=4
+	'(anon)' type_id=44
+	'(anon)' type_id=44
+	'(anon)' type_id=349
+	'(anon)' type_id=350
+[349] PTR '(anon)' type_id=345
+[350] PTR '(anon)' type_id=351
+[351] STRUCT 'ftrace_regs' size=168 vlen=1
+	'regs' type_id=341 bits_offset=0
+[352] STRUCT 'ftrace_ops_hash' size=48 vlen=3
+	'notrace_hash' type_id=353 bits_offset=0
+	'filter_hash' type_id=353 bits_offset=64
+	'regex_lock' type_id=247 bits_offset=128
+[353] PTR '(anon)' type_id=500
+[354] PTR '(anon)' type_id=352
+[355] PTR '(anon)' type_id=502
+[356] ARRAY '(anon)' type_id=283 index_type_id=4 nr_elems=4
+[357] PTR '(anon)' type_id=536
+[358] STRUCT 'fpu' size=4224 vlen=7
+	'last_cpu' type_id=19 bits_offset=0
+	'avx512_timestamp' type_id=44 bits_offset=64
+	'fpstate' type_id=359 bits_offset=128
+	'__task_fpstate' type_id=359 bits_offset=192
+	'perm' type_id=360 bits_offset=256
+	'guest_perm' type_id=360 bits_offset=384
+	'__fpstate' type_id=361 bits_offset=512
+[359] PTR '(anon)' type_id=361
+[360] STRUCT 'fpu_state_perm' size=16 vlen=3
+	'__state_perm' type_id=69 bits_offset=0
+	'__state_size' type_id=19 bits_offset=64
+	'__user_state_size' type_id=19 bits_offset=96
+[361] STRUCT 'fpstate' size=4160 vlen=10
+	'size' type_id=19 bits_offset=0
+	'user_size' type_id=19 bits_offset=32
+	'xfeatures' type_id=69 bits_offset=64
+	'user_xfeatures' type_id=69 bits_offset=128
+	'xfd' type_id=69 bits_offset=192
+	'is_valloc' type_id=19 bits_offset=256 bitfield_size=1
+	'is_guest' type_id=19 bits_offset=257 bitfield_size=1
+	'is_confidential' type_id=19 bits_offset=258 bitfield_size=1
+	'in_use' type_id=19 bits_offset=259 bitfield_size=1
+	'regs' type_id=362 bits_offset=512
+[362] UNION 'fpregs_state' size=4096 vlen=5
+	'fsave' type_id=363 bits_offset=0
+	'fxsave' type_id=365 bits_offset=0
+	'soft' type_id=373 bits_offset=0
+	'xsave' type_id=375 bits_offset=0
+	'__padding' type_id=379 bits_offset=0
+[363] STRUCT 'fregs_state' size=112 vlen=9
+	'cwd' type_id=50 bits_offset=0
+	'swd' type_id=50 bits_offset=32
+	'twd' type_id=50 bits_offset=64
+	'fip' type_id=50 bits_offset=96
+	'fcs' type_id=50 bits_offset=128
+	'foo' type_id=50 bits_offset=160
+	'fos' type_id=50 bits_offset=192
+	'st_space' type_id=364 bits_offset=224
+	'status' type_id=50 bits_offset=864
+[364] ARRAY '(anon)' type_id=50 index_type_id=4 nr_elems=20
+[365] STRUCT 'fxregs_state' size=512 vlen=11
+	'cwd' type_id=60 bits_offset=0
+	'swd' type_id=60 bits_offset=16
+	'twd' type_id=60 bits_offset=32
+	'fop' type_id=60 bits_offset=48
+	'(anon)' type_id=366 bits_offset=64
+	'mxcsr' type_id=50 bits_offset=192
+	'mxcsr_mask' type_id=50 bits_offset=224
+	'st_space' type_id=369 bits_offset=256
+	'xmm_space' type_id=370 bits_offset=1280
+	'padding' type_id=371 bits_offset=3328
+	'(anon)' type_id=372 bits_offset=3712
+[366] UNION '(anon)' size=16 vlen=2
+	'(anon)' type_id=367 bits_offset=0
+	'(anon)' type_id=368 bits_offset=0
+[367] STRUCT '(anon)' size=16 vlen=2
+	'rip' type_id=69 bits_offset=0
+	'rdp' type_id=69 bits_offset=64
+[368] STRUCT '(anon)' size=16 vlen=4
+	'fip' type_id=50 bits_offset=0
+	'fcs' type_id=50 bits_offset=32
+	'foo' type_id=50 bits_offset=64
+	'fos' type_id=50 bits_offset=96
+[369] ARRAY '(anon)' type_id=50 index_type_id=4 nr_elems=32
+[370] ARRAY '(anon)' type_id=50 index_type_id=4 nr_elems=64
+[371] ARRAY '(anon)' type_id=50 index_type_id=4 nr_elems=12
+[372] UNION '(anon)' size=48 vlen=2
+	'padding1' type_id=371 bits_offset=0
+	'sw_reserved' type_id=371 bits_offset=0
+[373] STRUCT 'swregs_state' size=136 vlen=16
+	'cwd' type_id=50 bits_offset=0
+	'swd' type_id=50 bits_offset=32
+	'twd' type_id=50 bits_offset=64
+	'fip' type_id=50 bits_offset=96
+	'fcs' type_id=50 bits_offset=128
+	'foo' type_id=50 bits_offset=160
+	'fos' type_id=50 bits_offset=192
+	'st_space' type_id=364 bits_offset=224
+	'ftop' type_id=88 bits_offset=864
+	'changed' type_id=88 bits_offset=872
+	'lookahead' type_id=88 bits_offset=880
+	'no_update' type_id=88 bits_offset=888
+	'rm' type_id=88 bits_offset=896
+	'alimit' type_id=88 bits_offset=904
+	'info' type_id=374 bits_offset=960
+	'entry_eip' type_id=50 bits_offset=1024
+[374] PTR '(anon)' type_id=537
+[375] STRUCT 'xregs_state' size=576 vlen=3
+	'i387' type_id=365 bits_offset=0
+	'header' type_id=376 bits_offset=4096
+	'extended_state_area' type_id=378 bits_offset=4608
+[376] STRUCT 'xstate_header' size=64 vlen=3
+	'xfeatures' type_id=69 bits_offset=0
+	'xcomp_bv' type_id=69 bits_offset=64
+	'reserved' type_id=377 bits_offset=128
+[377] ARRAY '(anon)' type_id=69 index_type_id=4 nr_elems=6
+[378] ARRAY '(anon)' type_id=88 index_type_id=4 nr_elems=0
+[379] ARRAY '(anon)' type_id=88 index_type_id=4 nr_elems=4096
+[380] STRUCT 'nsproxy' size=72 vlen=9
+	'count' type_id=54 bits_offset=0
+	'uts_ns' type_id=381 bits_offset=64
+	'ipc_ns' type_id=382 bits_offset=128
+	'mnt_ns' type_id=383 bits_offset=192
+	'pid_ns_for_children' type_id=322 bits_offset=256
+	'net_ns' type_id=384 bits_offset=320
+	'time_ns' type_id=385 bits_offset=384
+	'time_ns_for_children' type_id=385 bits_offset=448
+	'cgroup_ns' type_id=386 bits_offset=512
+[381] PTR '(anon)' type_id=474
+[382] PTR '(anon)' type_id=476
+[383] PTR '(anon)' type_id=387
+[384] PTR '(anon)' type_id=471
+[385] PTR '(anon)' type_id=480
+[386] PTR '(anon)' type_id=481
+[387] STRUCT 'mnt_namespace' size=120 vlen=11
+	'ns' type_id=388 bits_offset=0
+	'root' type_id=391 bits_offset=192
+	'list' type_id=67 bits_offset=256
+	'ns_lock' type_id=221 bits_offset=384
+	'user_ns' type_id=194 bits_offset=448
+	'ucounts' type_id=195 bits_offset=512
+	'seq' type_id=69 bits_offset=576
+	'poll' type_id=310 bits_offset=640
+	'event' type_id=69 bits_offset=832
+	'mounts' type_id=19 bits_offset=896
+	'pending_mounts' type_id=19 bits_offset=928
+[388] STRUCT 'ns_common' size=24 vlen=4
+	'stashed' type_id=126 bits_offset=0
+	'ops' type_id=389 bits_offset=64
+	'inum' type_id=19 bits_offset=128
+	'count' type_id=52 bits_offset=160
+[389] PTR '(anon)' type_id=390
+[390] CONST '(anon)' type_id=473
+[391] PTR '(anon)' type_id=478
+[392] PTR '(anon)' type_id=393
+[393] STRUCT 'syscall_trace_exit' size=24 vlen=3
+	'ent' type_id=41 bits_offset=0
+	'nr' type_id=2 bits_offset=64
+	'ret' type_id=137 bits_offset=128
+[394] FUNC_PROTO '(anon)' ret_type_id=2 vlen=1
+	'ctx' type_id=392
+[395] FUNC 'ig_mount_x' type_id=394 linkage=global
+[396] FUNC_PROTO '(anon)' ret_type_id=2 vlen=2
+	'ctx' type_id=51
+	'ret' type_id=2
+[397] FUNC 'probe_exit' type_id=396 linkage=static
+[398] ENUM 'bpf_func_id' encoding=UNSIGNED size=4 vlen=209
+	'BPF_FUNC_unspec' val=0
+	'BPF_FUNC_map_lookup_elem' val=1
+	'BPF_FUNC_map_update_elem' val=2
+	'BPF_FUNC_map_delete_elem' val=3
+	'BPF_FUNC_probe_read' val=4
+	'BPF_FUNC_ktime_get_ns' val=5
+	'BPF_FUNC_trace_printk' val=6
+	'BPF_FUNC_get_prandom_u32' val=7
+	'BPF_FUNC_get_smp_processor_id' val=8
+	'BPF_FUNC_skb_store_bytes' val=9
+	'BPF_FUNC_l3_csum_replace' val=10
+	'BPF_FUNC_l4_csum_replace' val=11
+	'BPF_FUNC_tail_call' val=12
+	'BPF_FUNC_clone_redirect' val=13
+	'BPF_FUNC_get_current_pid_tgid' val=14
+	'BPF_FUNC_get_current_uid_gid' val=15
+	'BPF_FUNC_get_current_comm' val=16
+	'BPF_FUNC_get_cgroup_classid' val=17
+	'BPF_FUNC_skb_vlan_push' val=18
+	'BPF_FUNC_skb_vlan_pop' val=19
+	'BPF_FUNC_skb_get_tunnel_key' val=20
+	'BPF_FUNC_skb_set_tunnel_key' val=21
+	'BPF_FUNC_perf_event_read' val=22
+	'BPF_FUNC_redirect' val=23
+	'BPF_FUNC_get_route_realm' val=24
+	'BPF_FUNC_perf_event_output' val=25
+	'BPF_FUNC_skb_load_bytes' val=26
+	'BPF_FUNC_get_stackid' val=27
+	'BPF_FUNC_csum_diff' val=28
+	'BPF_FUNC_skb_get_tunnel_opt' val=29
+	'BPF_FUNC_skb_set_tunnel_opt' val=30
+	'BPF_FUNC_skb_change_proto' val=31
+	'BPF_FUNC_skb_change_type' val=32
+	'BPF_FUNC_skb_under_cgroup' val=33
+	'BPF_FUNC_get_hash_recalc' val=34
+	'BPF_FUNC_get_current_task' val=35
+	'BPF_FUNC_probe_write_user' val=36
+	'BPF_FUNC_current_task_under_cgroup' val=37
+	'BPF_FUNC_skb_change_tail' val=38
+	'BPF_FUNC_skb_pull_data' val=39
+	'BPF_FUNC_csum_update' val=40
+	'BPF_FUNC_set_hash_invalid' val=41
+	'BPF_FUNC_get_numa_node_id' val=42
+	'BPF_FUNC_skb_change_head' val=43
+	'BPF_FUNC_xdp_adjust_head' val=44
+	'BPF_FUNC_probe_read_str' val=45
+	'BPF_FUNC_get_socket_cookie' val=46
+	'BPF_FUNC_get_socket_uid' val=47
+	'BPF_FUNC_set_hash' val=48
+	'BPF_FUNC_setsockopt' val=49
+	'BPF_FUNC_skb_adjust_room' val=50
+	'BPF_FUNC_redirect_map' val=51
+	'BPF_FUNC_sk_redirect_map' val=52
+	'BPF_FUNC_sock_map_update' val=53
+	'BPF_FUNC_xdp_adjust_meta' val=54
+	'BPF_FUNC_perf_event_read_value' val=55
+	'BPF_FUNC_perf_prog_read_value' val=56
+	'BPF_FUNC_getsockopt' val=57
+	'BPF_FUNC_override_return' val=58
+	'BPF_FUNC_sock_ops_cb_flags_set' val=59
+	'BPF_FUNC_msg_redirect_map' val=60
+	'BPF_FUNC_msg_apply_bytes' val=61
+	'BPF_FUNC_msg_cork_bytes' val=62
+	'BPF_FUNC_msg_pull_data' val=63
+	'BPF_FUNC_bind' val=64
+	'BPF_FUNC_xdp_adjust_tail' val=65
+	'BPF_FUNC_skb_get_xfrm_state' val=66
+	'BPF_FUNC_get_stack' val=67
+	'BPF_FUNC_skb_load_bytes_relative' val=68
+	'BPF_FUNC_fib_lookup' val=69
+	'BPF_FUNC_sock_hash_update' val=70
+	'BPF_FUNC_msg_redirect_hash' val=71
+	'BPF_FUNC_sk_redirect_hash' val=72
+	'BPF_FUNC_lwt_push_encap' val=73
+	'BPF_FUNC_lwt_seg6_store_bytes' val=74
+	'BPF_FUNC_lwt_seg6_adjust_srh' val=75
+	'BPF_FUNC_lwt_seg6_action' val=76
+	'BPF_FUNC_rc_repeat' val=77
+	'BPF_FUNC_rc_keydown' val=78
+	'BPF_FUNC_skb_cgroup_id' val=79
+	'BPF_FUNC_get_current_cgroup_id' val=80
+	'BPF_FUNC_get_local_storage' val=81
+	'BPF_FUNC_sk_select_reuseport' val=82
+	'BPF_FUNC_skb_ancestor_cgroup_id' val=83
+	'BPF_FUNC_sk_lookup_tcp' val=84
+	'BPF_FUNC_sk_lookup_udp' val=85
+	'BPF_FUNC_sk_release' val=86
+	'BPF_FUNC_map_push_elem' val=87
+	'BPF_FUNC_map_pop_elem' val=88
+	'BPF_FUNC_map_peek_elem' val=89
+	'BPF_FUNC_msg_push_data' val=90
+	'BPF_FUNC_msg_pop_data' val=91
+	'BPF_FUNC_rc_pointer_rel' val=92
+	'BPF_FUNC_spin_lock' val=93
+	'BPF_FUNC_spin_unlock' val=94
+	'BPF_FUNC_sk_fullsock' val=95
+	'BPF_FUNC_tcp_sock' val=96
+	'BPF_FUNC_skb_ecn_set_ce' val=97
+	'BPF_FUNC_get_listener_sock' val=98
+	'BPF_FUNC_skc_lookup_tcp' val=99
+	'BPF_FUNC_tcp_check_syncookie' val=100
+	'BPF_FUNC_sysctl_get_name' val=101
+	'BPF_FUNC_sysctl_get_current_value' val=102
+	'BPF_FUNC_sysctl_get_new_value' val=103
+	'BPF_FUNC_sysctl_set_new_value' val=104
+	'BPF_FUNC_strtol' val=105
+	'BPF_FUNC_strtoul' val=106
+	'BPF_FUNC_sk_storage_get' val=107
+	'BPF_FUNC_sk_storage_delete' val=108
+	'BPF_FUNC_send_signal' val=109
+	'BPF_FUNC_tcp_gen_syncookie' val=110
+	'BPF_FUNC_skb_output' val=111
+	'BPF_FUNC_probe_read_user' val=112
+	'BPF_FUNC_probe_read_kernel' val=113
+	'BPF_FUNC_probe_read_user_str' val=114
+	'BPF_FUNC_probe_read_kernel_str' val=115
+	'BPF_FUNC_tcp_send_ack' val=116
+	'BPF_FUNC_send_signal_thread' val=117
+	'BPF_FUNC_jiffies64' val=118
+	'BPF_FUNC_read_branch_records' val=119
+	'BPF_FUNC_get_ns_current_pid_tgid' val=120
+	'BPF_FUNC_xdp_output' val=121
+	'BPF_FUNC_get_netns_cookie' val=122
+	'BPF_FUNC_get_current_ancestor_cgroup_id' val=123
+	'BPF_FUNC_sk_assign' val=124
+	'BPF_FUNC_ktime_get_boot_ns' val=125
+	'BPF_FUNC_seq_printf' val=126
+	'BPF_FUNC_seq_write' val=127
+	'BPF_FUNC_sk_cgroup_id' val=128
+	'BPF_FUNC_sk_ancestor_cgroup_id' val=129
+	'BPF_FUNC_ringbuf_output' val=130
+	'BPF_FUNC_ringbuf_reserve' val=131
+	'BPF_FUNC_ringbuf_submit' val=132
+	'BPF_FUNC_ringbuf_discard' val=133
+	'BPF_FUNC_ringbuf_query' val=134
+	'BPF_FUNC_csum_level' val=135
+	'BPF_FUNC_skc_to_tcp6_sock' val=136
+	'BPF_FUNC_skc_to_tcp_sock' val=137
+	'BPF_FUNC_skc_to_tcp_timewait_sock' val=138
+	'BPF_FUNC_skc_to_tcp_request_sock' val=139
+	'BPF_FUNC_skc_to_udp6_sock' val=140
+	'BPF_FUNC_get_task_stack' val=141
+	'BPF_FUNC_load_hdr_opt' val=142
+	'BPF_FUNC_store_hdr_opt' val=143
+	'BPF_FUNC_reserve_hdr_opt' val=144
+	'BPF_FUNC_inode_storage_get' val=145
+	'BPF_FUNC_inode_storage_delete' val=146
+	'BPF_FUNC_d_path' val=147
+	'BPF_FUNC_copy_from_user' val=148
+	'BPF_FUNC_snprintf_btf' val=149
+	'BPF_FUNC_seq_printf_btf' val=150
+	'BPF_FUNC_skb_cgroup_classid' val=151
+	'BPF_FUNC_redirect_neigh' val=152
+	'BPF_FUNC_per_cpu_ptr' val=153
+	'BPF_FUNC_this_cpu_ptr' val=154
+	'BPF_FUNC_redirect_peer' val=155
+	'BPF_FUNC_task_storage_get' val=156
+	'BPF_FUNC_task_storage_delete' val=157
+	'BPF_FUNC_get_current_task_btf' val=158
+	'BPF_FUNC_bprm_opts_set' val=159
+	'BPF_FUNC_ktime_get_coarse_ns' val=160
+	'BPF_FUNC_ima_inode_hash' val=161
+	'BPF_FUNC_sock_from_file' val=162
+	'BPF_FUNC_check_mtu' val=163
+	'BPF_FUNC_for_each_map_elem' val=164
+	'BPF_FUNC_snprintf' val=165
+	'BPF_FUNC_sys_bpf' val=166
+	'BPF_FUNC_btf_find_by_name_kind' val=167
+	'BPF_FUNC_sys_close' val=168
+	'BPF_FUNC_timer_init' val=169
+	'BPF_FUNC_timer_set_callback' val=170
+	'BPF_FUNC_timer_start' val=171
+	'BPF_FUNC_timer_cancel' val=172
+	'BPF_FUNC_get_func_ip' val=173
+	'BPF_FUNC_get_attach_cookie' val=174
+	'BPF_FUNC_task_pt_regs' val=175
+	'BPF_FUNC_get_branch_snapshot' val=176
+	'BPF_FUNC_trace_vprintk' val=177
+	'BPF_FUNC_skc_to_unix_sock' val=178
+	'BPF_FUNC_kallsyms_lookup_name' val=179
+	'BPF_FUNC_find_vma' val=180
+	'BPF_FUNC_loop' val=181
+	'BPF_FUNC_strncmp' val=182
+	'BPF_FUNC_get_func_arg' val=183
+	'BPF_FUNC_get_func_ret' val=184
+	'BPF_FUNC_get_func_arg_cnt' val=185
+	'BPF_FUNC_get_retval' val=186
+	'BPF_FUNC_set_retval' val=187
+	'BPF_FUNC_xdp_get_buff_len' val=188
+	'BPF_FUNC_xdp_load_bytes' val=189
+	'BPF_FUNC_xdp_store_bytes' val=190
+	'BPF_FUNC_copy_from_user_task' val=191
+	'BPF_FUNC_skb_set_tstamp' val=192
+	'BPF_FUNC_ima_file_hash' val=193
+	'BPF_FUNC_kptr_xchg' val=194
+	'BPF_FUNC_map_lookup_percpu_elem' val=195
+	'BPF_FUNC_skc_to_mptcp_sock' val=196
+	'BPF_FUNC_dynptr_from_mem' val=197
+	'BPF_FUNC_ringbuf_reserve_dynptr' val=198
+	'BPF_FUNC_ringbuf_submit_dynptr' val=199
+	'BPF_FUNC_ringbuf_discard_dynptr' val=200
+	'BPF_FUNC_dynptr_read' val=201
+	'BPF_FUNC_dynptr_write' val=202
+	'BPF_FUNC_dynptr_data' val=203
+	'BPF_FUNC_tcp_raw_gen_syncookie_ipv4' val=204
+	'BPF_FUNC_tcp_raw_gen_syncookie_ipv6' val=205
+	'BPF_FUNC_tcp_raw_check_syncookie_ipv4' val=206
+	'BPF_FUNC_tcp_raw_check_syncookie_ipv6' val=207
+	'__BPF_FUNC_MAX_ID' val=208
+[399] FUNC_PROTO '(anon)' ret_type_id=2 vlen=1
+	'ctx' type_id=39
+[400] FUNC 'ig_umount_e' type_id=399 linkage=global
+[401] FUNC_PROTO '(anon)' ret_type_id=2 vlen=1
+	'ctx' type_id=392
+[402] FUNC 'ig_umount_x' type_id=401 linkage=global
+[403] CONST '(anon)' type_id=404
+[404] VOLATILE '(anon)' type_id=108
+[405] VAR 'gadget_filter_by_mntns' type_id=403, linkage=global
+[406] CONST '(anon)' type_id=407
+[407] VOLATILE '(anon)' type_id=408
+[408] TYPEDEF 'gadget_pid' type_id=18
+[409] VAR 'targ_pid' type_id=406, linkage=global
+[410] CONST '(anon)' type_id=411
+[411] VOLATILE '(anon)' type_id=412
+[412] TYPEDEF 'gadget_tid' type_id=18
+[413] VAR 'targ_tid' type_id=410, linkage=global
+[414] CONST '(anon)' type_id=415
+[415] VOLATILE '(anon)' type_id=416
+[416] TYPEDEF 'gadget_uid' type_id=18
+[417] VAR 'targ_uid' type_id=414, linkage=global
+[418] CONST '(anon)' type_id=419
+[419] VOLATILE '(anon)' type_id=420
+[420] TYPEDEF 'gadget_gid' type_id=18
+[421] VAR 'targ_gid' type_id=418, linkage=global
+[422] CONST '(anon)' type_id=423
+[423] VOLATILE '(anon)' type_id=424
+[424] TYPEDEF 'gadget_comm' type_id=29
+[425] ARRAY '(anon)' type_id=422 index_type_id=4 nr_elems=16
+[426] VAR 'targ_comm' type_id=425, linkage=global
+[427] ARRAY '(anon)' type_id=29 index_type_id=4 nr_elems=13
+[428] VAR 'LICENSE' type_id=427, linkage=global
+[429] PTR '(anon)' type_id=430
+[430] CONST '(anon)' type_id=0
+[431] VAR 'gadget_param_targ_pid' type_id=429, linkage=global
+[432] VAR 'gadget_param_targ_tid' type_id=429, linkage=global
+[433] VAR 'gadget_param_targ_uid' type_id=429, linkage=global
+[434] VAR 'gadget_param_targ_gid' type_id=429, linkage=global
+[435] VAR 'gadget_param_targ_comm' type_id=429, linkage=global
+[436] VAR 'gadget_map_tracer_events' type_id=429, linkage=global
+[437] VAR 'gadget_tracer_mount___events___event' type_id=429, linkage=global
+[438] PTR '(anon)' type_id=439
+[439] CONST '(anon)' type_id=440
+[440] STRUCT 'event' size=8808 vlen=10
+	'timestamp_raw' type_id=441 bits_offset=0
+	'proc' type_id=442 bits_offset=64
+	'delta_raw' type_id=449 bits_offset=576
+	'flags_raw' type_id=26 bits_offset=640
+	'error_raw' type_id=450 bits_offset=704
+	'fs' type_id=451 bits_offset=736
+	'src' type_id=452 bits_offset=800
+	'dest' type_id=452 bits_offset=33568
+	'data' type_id=453 bits_offset=66336
+	'op_raw' type_id=30 bits_offset=70432
+[441] TYPEDEF 'gadget_timestamp' type_id=15
+[442] STRUCT 'gadget_process' size=64 vlen=6
+	'comm' type_id=443 bits_offset=0
+	'pid' type_id=408 bits_offset=128
+	'tid' type_id=412 bits_offset=160
+	'mntns_id' type_id=14 bits_offset=192
+	'creds' type_id=444 bits_offset=256
+	'parent' type_id=445 bits_offset=320
+[443] ARRAY '(anon)' type_id=424 index_type_id=4 nr_elems=16
+[444] STRUCT 'gadget_creds' size=8 vlen=2
+	'uid' type_id=416 bits_offset=0
+	'gid' type_id=420 bits_offset=32
+[445] STRUCT 'gadget_parent' size=20 vlen=2
+	'comm' type_id=447 bits_offset=0
+	'pid' type_id=448 bits_offset=128
+[446] TYPEDEF 'gadget_pcomm' type_id=29
+[447] ARRAY '(anon)' type_id=446 index_type_id=4 nr_elems=16
+[448] TYPEDEF 'gadget_ppid' type_id=18
+[449] TYPEDEF 'gadget_duration' type_id=15
+[450] TYPEDEF 'gadget_errno' type_id=18
+[451] ARRAY '(anon)' type_id=29 index_type_id=4 nr_elems=8
+[452] ARRAY '(anon)' type_id=29 index_type_id=4 nr_elems=4096
+[453] ARRAY '(anon)' type_id=29 index_type_id=4 nr_elems=512
+[454] VAR '__gadget_tracer_type_mount' type_id=438, linkage=global
+[455] CONST '(anon)' type_id=2
+[456] VAR 'gadget_reserve_buf.zero' type_id=455, linkage=static
+[457] DATASEC '.bss' size=0 vlen=8
+	type_id=431 offset=0 size=8 (VAR 'gadget_param_targ_pid')
+	type_id=432 offset=0 size=8 (VAR 'gadget_param_targ_tid')
+	type_id=433 offset=0 size=8 (VAR 'gadget_param_targ_uid')
+	type_id=434 offset=0 size=8 (VAR 'gadget_param_targ_gid')
+	type_id=435 offset=0 size=8 (VAR 'gadget_param_targ_comm')
+	type_id=436 offset=0 size=8 (VAR 'gadget_map_tracer_events')
+	type_id=437 offset=0 size=8 (VAR 'gadget_tracer_mount___events___event')
+	type_id=454 offset=0 size=8 (VAR '__gadget_tracer_type_mount')
+[458] DATASEC '.maps' size=0 vlen=4
+	type_id=12 offset=0 size=32 (VAR 'gadget_heap')
+	type_id=23 offset=0 size=32 (VAR 'gadget_mntns_filter_map')
+	type_id=32 offset=0 size=32 (VAR 'args')
+	type_id=38 offset=0 size=16 (VAR 'events')
+[459] DATASEC '.rodata' size=0 vlen=7
+	type_id=405 offset=0 size=1 (VAR 'gadget_filter_by_mntns')
+	type_id=409 offset=0 size=4 (VAR 'targ_pid')
+	type_id=413 offset=0 size=4 (VAR 'targ_tid')
+	type_id=417 offset=0 size=4 (VAR 'targ_uid')
+	type_id=421 offset=0 size=4 (VAR 'targ_gid')
+	type_id=426 offset=0 size=16 (VAR 'targ_comm')
+	type_id=456 offset=36 size=4 (VAR 'gadget_reserve_buf.zero')
+[460] DATASEC 'license' size=0 vlen=1
+	type_id=428 offset=0 size=13 (VAR 'LICENSE')
+[461] FWD 'page' fwd_kind=struct
+[462] FWD 'cfs_rq' fwd_kind=struct
+[463] FWD 'mm_struct' fwd_kind=struct
+[464] FWD 'anon_vma_name' fwd_kind=struct
+[465] FWD 'anon_vma' fwd_kind=struct
+[466] FWD 'vm_operations_struct' fwd_kind=struct
+[467] FWD 'file' fwd_kind=struct
+[468] FWD 'pipe_inode_info' fwd_kind=struct
+[469] FWD 'fasync_struct' fwd_kind=struct
+[470] FWD 'user_struct' fwd_kind=struct
+[471] FWD 'net' fwd_kind=struct
+[472] FWD 'user_namespace' fwd_kind=struct
+[473] FWD 'proc_ns_operations' fwd_kind=struct
+[474] FWD 'uts_namespace' fwd_kind=struct
+[475] FWD 'ucounts' fwd_kind=struct
+[476] FWD 'ipc_namespace' fwd_kind=struct
+[477] FWD 'completion' fwd_kind=struct
+[478] FWD 'mount' fwd_kind=struct
+[479] FWD 'pid_namespace' fwd_kind=struct
+[480] FWD 'time_namespace' fwd_kind=struct
+[481] FWD 'cgroup_namespace' fwd_kind=struct
+[482] FWD 'css_set' fwd_kind=struct
+[483] FWD 'bpf_local_storage' fwd_kind=struct
+[484] FWD 'mem_cgroup' fwd_kind=struct
+[485] FWD 'hrtimer_clock_base' fwd_kind=struct
+[486] FWD 'bpf_prog' fwd_kind=struct
+[487] FWD 'signal_struct' fwd_kind=struct
+[488] FWD 'fs_struct' fwd_kind=struct
+[489] FWD 'key' fwd_kind=struct
+[490] FWD 'group_info' fwd_kind=struct
+[491] FWD 'backing_dev_info' fwd_kind=struct
+[492] FWD 'bio_list' fwd_kind=struct
+[493] FWD 'io_context' fwd_kind=struct
+[494] FWD 'files_struct' fwd_kind=struct
+[495] FWD 'io_uring_task' fwd_kind=struct
+[496] FWD 'blk_plug' fwd_kind=struct
+[497] FWD 'pid' fwd_kind=struct
+[498] FWD 'trace_event_call' fwd_kind=struct
+[499] FWD 'event_filter' fwd_kind=struct
+[500] FWD 'ftrace_hash' fwd_kind=struct
+[501] FWD 'pmu' fwd_kind=struct
+[502] FWD 'perf_cgroup' fwd_kind=struct
+[503] FWD 'perf_buffer' fwd_kind=struct
+[504] FWD 'perf_addr_filter_range' fwd_kind=struct
+[505] FWD 'perf_raw_record' fwd_kind=struct
+[506] FWD 'perf_branch_stack' fwd_kind=struct
+[507] FWD 'perf_callchain_entry' fwd_kind=struct
+[508] FWD 'request_queue' fwd_kind=struct
+[509] FWD 'mempolicy' fwd_kind=struct
+[510] FWD 'userfaultfd_ctx' fwd_kind=struct
+[511] FWD 'kernel_siginfo' fwd_kind=struct
+[512] FWD 'task_group' fwd_kind=struct
+[513] FWD 'sched_class' fwd_kind=struct
+[514] FWD 'rcu_node' fwd_kind=struct
+[515] FWD '__kernel_timespec' fwd_kind=struct
+[516] FWD 'old_timespec32' fwd_kind=struct
+[517] FWD 'pollfd' fwd_kind=struct
+[518] FWD 'nameidata' fwd_kind=struct
+[519] FWD 'audit_context' fwd_kind=struct
+[520] FWD 'sem_undo_list' fwd_kind=struct
+[521] FWD 'sighand_struct' fwd_kind=struct
+[522] FWD 'seccomp_filter' fwd_kind=struct
+[523] FWD 'rt_mutex_waiter' fwd_kind=struct
+[524] FWD 'reclaim_state' fwd_kind=struct
+[525] FWD 'capture_control' fwd_kind=struct
+[526] FWD 'robust_list_head' fwd_kind=struct
+[527] FWD 'compat_robust_list_head' fwd_kind=struct
+[528] FWD 'futex_pi_state' fwd_kind=struct
+[529] FWD 'numa_group' fwd_kind=struct
+[530] FWD 'rseq' fwd_kind=struct
+[531] FWD 'task_delay_info' fwd_kind=struct
+[532] FWD 'ftrace_ret_stack' fwd_kind=struct
+[533] FWD 'uprobe_task' fwd_kind=struct
+[534] FWD 'vm_struct' fwd_kind=struct
+[535] FWD 'bpf_run_ctx' fwd_kind=struct
+[536] FWD 'io_bitmap' fwd_kind=struct
+[537] FWD 'math_emu_info' fwd_kind=struct

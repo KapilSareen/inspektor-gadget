@@ -257,6 +257,7 @@ func (i *wasmOperatorInstance) init(
 	i.mod = mod
 
 	versionF := mod.ExportedFunction("gadgetAPIVersion")
+	// HERE
 	if versionF == nil {
 		return errors.New("wasm module doesn't export gadgetAPIVersion")
 	}

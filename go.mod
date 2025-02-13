@@ -81,6 +81,8 @@ require (
 	sigs.k8s.io/yaml v1.4.0
 )
 
+require github.com/google/go-containerregistry v0.20.2
+
 require (
 	dario.cat/mergo v1.0.1 // indirect
 	github.com/AdaLogics/go-fuzz-headers v0.0.0-20230811130428-ced1acdcaa24 // indirect
@@ -119,7 +121,12 @@ require (
 	github.com/ghodss/yaml v1.0.0 // indirect
 	github.com/giantswarm/microerror v0.4.1 // indirect
 	github.com/go-errors/errors v1.4.2 // indirect
+<<<<<<< HEAD
 	github.com/go-jose/go-jose/v4 v4.0.5 // indirect
+=======
+	github.com/go-interpreter/wagon v0.6.0 // indirect
+	github.com/go-jose/go-jose/v4 v4.0.4 // indirect
+>>>>>>> 7e0271fb (saving progress local 1)
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-logr/zapr v1.3.0 // indirect
@@ -130,8 +137,12 @@ require (
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/google/btree v1.1.3 // indirect
+<<<<<<< HEAD
 	github.com/google/gnostic-models v0.6.9 // indirect
 	github.com/google/go-containerregistry v0.20.3 // indirect
+=======
+	github.com/google/gnostic-models v0.6.9-0.20230804172637-c7be7c783f49 // indirect
+>>>>>>> 7e0271fb (saving progress local 1)
 	github.com/google/gofuzz v1.2.0 // indirect
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
 	github.com/gorilla/mux v1.8.1 // indirect
@@ -192,6 +203,7 @@ require (
 	github.com/spf13/cast v1.7.0 // indirect
 	github.com/subosito/gotenv v1.6.0 // indirect
 	github.com/titanous/rocacheck v0.0.0-20171023193734-afe73141d399 // indirect
+	github.com/wasmerio/wasmer-go v1.0.4 // indirect
 	github.com/x448/float16 v0.8.4 // indirect
 	github.com/xlab/treeprint v1.2.0 // indirect
 	go.opencensus.io v0.24.0 // indirect
