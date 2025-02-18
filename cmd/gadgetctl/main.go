@@ -28,6 +28,7 @@ import (
 	_ "github.com/inspektor-gadget/inspektor-gadget/pkg/all-gadgets"
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/config"
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/environment"
+	"github.com/inspektor-gadget/inspektor-gadget/cmd/common/image"
 	grpcruntime "github.com/inspektor-gadget/inspektor-gadget/pkg/runtime/grpc"
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/utils/experimental"
 )
@@ -100,6 +101,7 @@ func main() {
 	common.AddCommandsFromRegistry(rootCmd, runtime, hiddenColumnTags)
 
 	common.AddInstanceCommands(rootCmd, runtime)
+	rootCmd.AddCommand(image.NewImageCmd())
 	rootCmd.AddCommand(common.NewSyncCommand(runtime))
 	rootCmd.AddCommand(common.NewRunCommand(rootCmd, runtime, hiddenColumnTags, common.CommandModeRun))
 	rootCmd.AddCommand(common.NewRunCommand(rootCmd, runtime, hiddenColumnTags, common.CommandModeAttach))
