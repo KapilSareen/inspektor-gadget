@@ -62,6 +62,7 @@ type GadgetContext struct {
 
 	// useInstance, if set, will try to work with existing gadget instances on the server
 	useInstance bool
+	getExtraInfo bool
 
 	lock             sync.Mutex
 	dataSources      map[string]datasource.DataSource
@@ -104,6 +105,7 @@ func NewBuiltIn(
 		operators:                operators.GetOperatorsForGadget(gadget),
 		operatorsParamCollection: operatorsParamCollection,
 		timeout:                  timeout,
+		getExtraInfo: 		   	false,
 
 		dataSources: make(map[string]datasource.DataSource),
 		vars:        make(map[string]any),
@@ -135,6 +137,10 @@ func New(
 
 func (c *GadgetContext) ID() string {
 	return c.id
+}
+
+func (c *GadgetContext) GetExtraInfo() bool {
+	return c.getExtraInfo
 }
 
 func (c *GadgetContext) Context() context.Context {

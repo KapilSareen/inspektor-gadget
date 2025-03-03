@@ -29,6 +29,7 @@ import (
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/columns"
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/columns/formatter/textcolumns"
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/oci"
+	// gadgetcontext "github.com/inspektor-gadget/inspektor-gadget/pkg/gadget-context"
 
 	"golang.org/x/term"
 )
@@ -37,14 +38,35 @@ func NewInspectCmd() *cobra.Command {
 	var outputMode string
 
 	outputModes := []string{utils.OutputModeColumns, utils.OutputModeJSON, utils.OutputModeJSONPretty}
+	
+	/*
+	gadgetCtx := gadgetcontext.New(
+		context.Background(),
+		imageName,
+		gadgetcontext.WithDataOperators(ops...),
+		gadgetcontext.WithUseInstance(commandMode == CommandModeAttach),
+		)
+		
+		// GetOCIGadget needs at least the params from the oci handler, so let's prepare those in here
+		paramValueMap := make(map[string]string)
+		ociParams.CopyToMap(paramValueMap, "operator.oci.")
 
+		// Fetch gadget information; TODO: this can potentially be cached
+		info, err = runtime.GetGadgetInfo(gadgetCtx, runtimeParams, paramValueMap)
+		if err != nil {
+			return fmt.Errorf("fetching gadget information: %w", err)
+		}
+
+	*/
 	cmd := &cobra.Command{
 		Use:          "inspect",
 		Short:        "Inspect the local gadget image",
 		SilenceUsage: true,
 		Args:         cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {
+			// here
 			image, err := oci.GetGadgetImageDesc(context.TODO(), args[0])
+			fmt.Println("Image: ", image)
 			if err != nil {
 				return fmt.Errorf("inspecting image: %w", err)
 			}

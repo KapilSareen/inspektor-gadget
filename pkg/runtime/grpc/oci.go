@@ -31,6 +31,8 @@ import (
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/runtime"
 )
 
+// here --> Add a new field for request extra info in the GetGadgetInfo
+// client side of grpc
 func (r *Runtime) GetGadgetInfo(gadgetCtx runtime.GadgetContext, runtimeParams *params.Params, paramValues api.ParamValues) (*api.GadgetInfo, error) {
 	if runtimeParams == nil {
 		runtimeParams = r.ParamDescs().ToParams()
@@ -47,6 +49,7 @@ func (r *Runtime) GetGadgetInfo(gadgetCtx runtime.GadgetContext, runtimeParams *
 		ParamValues: paramValues,
 		ImageName:   gadgetCtx.ImageName(),
 		Version:     api.VersionGadgetInfo,
+		GetExtraInfo: gadgetCtx.GetExtraInfo(), 
 	}
 
 	// specify that ImageName will contain a gadget instance ID

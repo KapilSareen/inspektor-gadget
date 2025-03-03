@@ -47,12 +47,13 @@ func (s *Service) initOperators() error {
 func (s *Service) GetOperatorMap() map[operators.DataOperator]*params.Params {
 	return s.operators
 }
-
+// --->  server side of grpc<---
 func (s *Service) GetGadgetInfo(ctx context.Context, req *api.GetGadgetInfoRequest) (*api.GetGadgetInfoResponse, error) {
 	if req.Version != api.VersionGadgetInfo {
 		return nil, fmt.Errorf("expected version to be %d, got %d", api.VersionGadgetInfo, req.Version)
 	}
-
+	fmt.Println("Request Called!!!")
+	fmt.Println("Extra Info Bool: ",req.GetExtraInfo)
 	p, ok := peer.FromContext(ctx)
 	if ok && p.AuthInfo != nil {
 		tlsInfo, ok := p.AuthInfo.(credentials.TLSInfo)
