@@ -47,11 +47,13 @@ func (s *Service) initOperators() error {
 func (s *Service) GetOperatorMap() map[operators.DataOperator]*params.Params {
 	return s.operators
 }
-
+// --->  server side of grpc<---
 func (s *Service) GetGadgetInfo(ctx context.Context, req *api.GetGadgetInfoRequest) (*api.GetGadgetInfoResponse, error) {
 	if req.Version != api.VersionGadgetInfo {
 		return nil, fmt.Errorf("expected version to be %d, got %d", api.VersionGadgetInfo, req.Version)
 	}
+	fmt.Println("Extra Info Bool: ",req.GetExtraInfo)
+	// check for this bool and if true, return extra info
 
 	p, ok := peer.FromContext(ctx)
 	if ok && p.AuthInfo != nil {
@@ -91,6 +93,7 @@ func (s *Service) GetGadgetInfo(ctx context.Context, req *api.GetGadgetInfoReque
 		gadgetcontext.WithDataOperators(ops...),
 		gadgetcontext.WithAsRemoteCall(true),
 	)
+	gadgetCtx.SetExtraInfo(req.GetExtraInfo)
 
 	gi, err := s.runtime.GetGadgetInfo(gadgetCtx, s.runtime.ParamDescs().ToParams(), req.ParamValues)
 	if err != nil {
