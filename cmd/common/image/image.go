@@ -20,12 +20,20 @@ import (
 	"github.com/inspektor-gadget/inspektor-gadget/pkg/runtime"
 )
 
-func NewImageCmd(r runtime.Runtime) *cobra.Command {
+func NewImageCmd(r runtime.Runtime, addCommands []*cobra.Command) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "image",
 		Short: "Manage gadget images",
 	}
+	// add only specific subcommands
+	if addCommands != nil {
+		for _, c := range addCommands {
+			cmd.AddCommand(c)
+		}
+		return cmd
+	}
 
+	// add all subcommands if not specified
 	cmd.AddCommand(NewBuildCmd())
 	cmd.AddCommand(NewExportCmd())
 	cmd.AddCommand(NewImportCmd())
