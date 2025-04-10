@@ -105,3 +105,38 @@ You can now delete the pod you created:
         ```
     </TabItem>
 </Tabs>
+
+## Program-Map Relationships
+
+### Flowchart Graph
+
+Mermaid graph showing relations between maps and programs
+```mermaid
+flowchart LR
+events[("events")]
+gadget_mntns_filter_map[("gadget_mntns_filter_map")]
+gadget_sockets[("gadget_sockets")]
+ig_trace_sni -- "EventOutput" --> events
+ig_trace_sni -- "Lookup" --> gadget_mntns_filter_map
+ig_trace_sni -- "Lookup" --> gadget_sockets
+ig_trace_sni["ig_trace_sni"]
+```
+
+### Sequence Graph 
+
+Mermaid graph showing the sequence of events
+```mermaid
+sequenceDiagram
+box eBPF Programs
+participant ig_trace_sni
+end
+box eBPF Maps
+participant gadget_sockets
+participant gadget_mntns_filter_map
+participant events
+end
+ig_trace_sni->>gadget_sockets: Lookup
+ig_trace_sni->>gadget_sockets: Lookup
+ig_trace_sni->>gadget_mntns_filter_map: Lookup
+ig_trace_sni->>events: EventOutput
+```

@@ -288,3 +288,31 @@ You can clean up the resources created during this guide by running the followin
         ```
     </TabItem>
 </Tabs>
+
+## Program-Map Relationships
+
+### Flowchart Graph
+
+Mermaid graph showing relations between maps and programs
+```mermaid
+flowchart LR
+hists[("hists")]
+ig_tcprcvest_kp -- "Lookup+Update" --> hists
+ig_tcprcvest_kp["ig_tcprcvest_kp"]
+```
+
+### Sequence Graph 
+
+Mermaid graph showing the sequence of events
+```mermaid
+sequenceDiagram
+box eBPF Programs
+participant ig_tcprcvest_kp
+end
+box eBPF Maps
+participant hists
+end
+ig_tcprcvest_kp->>hists: Lookup
+ig_tcprcvest_kp->>hists: Update
+ig_tcprcvest_kp->>hists: Lookup
+```

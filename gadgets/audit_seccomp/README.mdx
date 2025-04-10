@@ -35,7 +35,11 @@ one of these two conditions:
 
 ## Flags
 
-No flags.
+### `--collect-ustack`
+
+Collect user stack traces
+
+Default value: "false"
 
 ## Guide
 
@@ -217,3 +221,38 @@ $ docker rm -f test-trace-bind
 ```
 </TabItem>
 </Tabs>
+
+## Program-Map Relationships
+
+### Flowchart Graph
+
+Mermaid graph showing relations between maps and programs
+```mermaid
+flowchart LR
+events[("events")]
+gadget_heap[("gadget_heap")]
+gadget_mntns_filter_map[("gadget_mntns_filter_map")]
+ig_ustack[("ig_ustack")]
+ig_audit_secc -- "EventOutput" --> events
+ig_audit_secc -- "Lookup" --> gadget_heap
+ig_audit_secc -- "Lookup" --> gadget_mntns_filter_map
+ig_audit_secc["ig_audit_secc"]
+```
+
+### Sequence Graph 
+
+Mermaid graph showing the sequence of events
+```mermaid
+sequenceDiagram
+box eBPF Programs
+participant ig_audit_secc
+end
+box eBPF Maps
+participant gadget_mntns_filter_map
+participant gadget_heap
+participant events
+end
+ig_audit_secc->>gadget_mntns_filter_map: Lookup
+ig_audit_secc->>gadget_heap: Lookup
+ig_audit_secc->>events: EventOutput
+```

@@ -55,3 +55,76 @@ hungry_montalcini                                    39046 4       [51, 208], [8
 - This gadget detects "potential" deadlocks and not just actual deadlocks as a deadlock that didn't happen during the trace could happen in the future.
 A deadlock occurring depends on various factors such as thread scheduling and order of mutex acquisitions/releases, and hence it makes sense to report mutex lock order inversions as potentially unsafe resource management.
 - Tracing with `--host` will slow down the gadget due to too many events.
+
+## Program-Map Relationships
+
+### Flowchart Graph
+
+Mermaid graph showing relations between maps and programs
+```mermaid
+flowchart LR
+dead_pids[("dead_pids")]
+edges[("edges")]
+gadget_heap[("gadget_heap")]
+gadget_mntns_filter_map[("gadget_mntns_filter_map")]
+stackmap[("stackmap")]
+thread_to_held_mutexes[("thread_to_held_mutexes")]
+trace_sched_process_exit -- "EventOutput" --> dead_pids
+trace_sched_process_exit -- "Lookup" --> gadget_heap
+trace_sched_process_exit -- "Lookup" --> gadget_mntns_filter_map
+trace_sched_process_exit -- "Delete" --> thread_to_held_mutexes
+trace_sched_process_exit["trace_sched_process_exit"]
+trace_uprobe_mutex_lock -- "Update" --> edges
+trace_uprobe_mutex_lock -- "Lookup" --> gadget_mntns_filter_map
+trace_uprobe_mutex_lock -- "Lookup+Update" --> thread_to_held_mutexes
+trace_uprobe_mutex_lock["trace_uprobe_mutex_lock"]
+trace_uprobe_mutex_unlock -- "Lookup" --> gadget_mntns_filter_map
+trace_uprobe_mutex_unlock -- "Lookup+Delete" --> thread_to_held_mutexes
+trace_uprobe_mutex_unlock["trace_uprobe_mutex_unlock"]
+```
+
+### Sequence Graph 
+
+Mermaid graph showing the sequence of events
+```mermaid
+sequenceDiagram
+box eBPF Programs
+participant trace_uprobe_mutex_lock
+participant trace_uprobe_mutex_unlock
+participant trace_sched_process_exit
+end
+box eBPF Maps
+participant gadget_mntns_filter_map
+participant thread_to_held_mutexes
+participant edges
+participant gadget_heap
+participant dead_pids
+end
+trace_uprobe_mutex_lock->>gadget_mntns_filter_map: Lookup
+trace_uprobe_mutex_lock->>thread_to_held_mutexes: Lookup
+trace_uprobe_mutex_lock->>thread_to_held_mutexes: Update
+trace_uprobe_mutex_lock->>thread_to_held_mutexes: Lookup
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_lock->>edges: Update
+trace_uprobe_mutex_unlock->>gadget_mntns_filter_map: Lookup
+trace_uprobe_mutex_unlock->>thread_to_held_mutexes: Lookup
+trace_uprobe_mutex_unlock->>thread_to_held_mutexes: Delete
+trace_sched_process_exit->>gadget_mntns_filter_map: Lookup
+trace_sched_process_exit->>thread_to_held_mutexes: Delete
+trace_sched_process_exit->>gadget_heap: Lookup
+trace_sched_process_exit->>dead_pids: EventOutput
+```

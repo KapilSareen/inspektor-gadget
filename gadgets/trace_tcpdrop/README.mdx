@@ -208,3 +208,42 @@ The following tools can be used to show dropped packets but they are not focused
 * [dropwatch](https://github.com/nhorman/dropwatch): interactive tool using [Netlink Devlink Trap](https://www.kernel.org/doc/html/latest/networking/devlink/devlink-trap.html) to see drops packets by the NIC.
 * [BCC's tcpdrop](https://github.com/iovisor/bcc/blob/master/tools/tcpdrop_example.txt): tool using eBPF and kprobes/tracepoints to show when a socket buffer is released by the kernel.
 * [Retis' skb-drop collector](https://github.com/retis-org/retis): tool using various collectors (skb-drop, nftables, ovs) to show the flow of packets in the kernel.
+
+## Program-Map Relationships
+
+### Flowchart Graph
+
+Mermaid graph showing relations between maps and programs
+```mermaid
+flowchart LR
+events[("events")]
+gadget_heap[("gadget_heap")]
+gadget_mntns_filter_map[("gadget_mntns_filter_map")]
+gadget_sockets[("gadget_sockets")]
+ig_kstack[("ig_kstack")]
+ig_tcpdrop -- "EventOutput" --> events
+ig_tcpdrop -- "Lookup" --> gadget_heap
+ig_tcpdrop -- "Lookup" --> gadget_mntns_filter_map
+ig_tcpdrop -- "Lookup" --> gadget_sockets
+ig_tcpdrop["ig_tcpdrop"]
+```
+
+### Sequence Graph 
+
+Mermaid graph showing the sequence of events
+```mermaid
+sequenceDiagram
+box eBPF Programs
+participant ig_tcpdrop
+end
+box eBPF Maps
+participant gadget_heap
+participant gadget_sockets
+participant gadget_mntns_filter_map
+participant events
+end
+ig_tcpdrop->>gadget_heap: Lookup
+ig_tcpdrop->>gadget_sockets: Lookup
+ig_tcpdrop->>gadget_mntns_filter_map: Lookup
+ig_tcpdrop->>events: EventOutput
+```
