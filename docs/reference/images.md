@@ -287,10 +287,11 @@ Usage:
   ig image inspect IMAGE [flags]
 
 Flags:
-  -h, --help            help for inspect
-  -o, --output string   Output mode: json, jsonpretty, yaml (default "jsonpretty")
-  --extra-info string   specify particular info required
-  --jsonpath   string   JSONPath to extract from the extra info
+  -h, --help                  help for inspect
+  -o, --output       string   Output mode: json, jsonpretty, yaml (default "jsonpretty")
+  --extra-info       string   specify particular info required
+  --jsonpath         string   JSONPath to extract from the extra info
+  --show-datasources bool     show datasources along with their fields
 ```
 
 ```bash
@@ -427,4 +428,25 @@ params:
 $ sudo ig image inspect advise_seccomp:latest --extra-info=oci.manifest --jsonpath=".layers[*].mediaType" -o yaml
 - application/vnd.gadget.ebpf.program.v1+binary
 - application/vnd.gadget.wasm.program.v1+binary
+
+# List datasources along with their fields
+sudo ig image inspect advise_seccomp:latest --show-datasources
+[
+  {
+    "name": "advise",
+    "type": 1,
+    "fields": [
+      {
+        "name": "text",
+        "fullName": "text",
+        "kind": 12,
+        "annotations": {
+          "columns.alignment": "left",
+          "columns.ellipsis": "end",
+          "columns.width": "16"
+        }
+      }
+    ],
+    "annotations": {
+...
 ```

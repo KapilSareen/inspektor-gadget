@@ -51,6 +51,7 @@ func NewInspectCmd(runtime runtime.Runtime) *cobra.Command {
 	}
 
 	cmd.PersistentFlags().String("extra-info", "", "Custom info type to display")
+	cmd.PersistentFlags().Bool("show-datasources", false, "Show datasources with their fields")
 	cmd.PersistentFlags().String("jsonpath", "", "JSONPath to extract from the extra info")
 
 	ociParams := apihelpers.ToParamDescs(ocihandler.OciHandler.InstanceParams()).ToParams()
@@ -156,6 +157,10 @@ func NewInspectCmd(runtime runtime.Runtime) *cobra.Command {
 		}
 		if jsonPath != "" && extraInfo == "" {
 			return fmt.Errorf("jsonpath %q can only be used with extra info", jsonPath)
+		}
+		showDataSources, _ := cmd.PersistentFlags().GetBool("show-datasources")
+		if showDataSources {
+			customResult = info.DataSources
 		}
 
 		switch outputMode {
